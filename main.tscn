@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhf6a5c3tpufu"]
+
+[ext_resource type="Texture2D" uid="uid://xe7wabfcudyh" path="res://images/wizard_frontal.png" id="1_ig7tw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-2, 0)
+texture = ExtResource("1_ig7tw")
