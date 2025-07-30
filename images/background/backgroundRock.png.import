@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xe7wabfcudyh"
-path="res://.godot/imported/wizard_frontal.png-30d965b7ca74b9b2468593018e058e0b.ctex"
+uid="uid://b16cjohmdvmid"
+path="res://.godot/imported/backgroundRock.png-bc1686baffd5e0dd4acc94fe6cf38faf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/wizard_frontal.png"
-dest_files=["res://.godot/imported/wizard_frontal.png-30d965b7ca74b9b2468593018e058e0b.ctex"]
+source_file="res://images/background/backgroundRock.png"
+dest_files=["res://.godot/imported/backgroundRock.png-bc1686baffd5e0dd4acc94fe6cf38faf.ctex"]
 
 [params]
 
