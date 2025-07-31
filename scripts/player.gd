@@ -1,9 +1,6 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
+signal hit
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
@@ -18,8 +15,10 @@ func _physics_process(delta: float) -> void:
 	if input_vector.x != 0:
 		if input_vector.x < 0:
 			$AnimatedSprite2D.play("runSide")
+			$AnimatedSprite2D.flip_h = true
 		else:
 			$AnimatedSprite2D.play("runSide")
+			$AnimatedSprite2D.flip_h = false
 	elif input_vector.y != 0:
 		if input_vector.y < 0:
 			$AnimatedSprite2D.play("runBack")
@@ -29,6 +28,12 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.play("default")
 	
 	
-	velocity = input_vector * SPEED
+	velocity = input_vector * Global.SPEED
 
-	move_and_slide()
+	move_and_slide() # Move the player and get the collisions
+	
+	var collision = get_last_slide_collision()
+	
+	if collision:
+		if collision.get_collider() is CharacterBody2D:
+			hit.emit()

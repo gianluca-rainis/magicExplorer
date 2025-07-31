@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvyw8yto1ka14"
-path="res://.godot/imported/pixil-frame-0.png-ad73aed19b00fd55eeaf2db0cae8f8ff.ctex"
+uid="uid://btr2hefrmjfnt"
+path="res://.godot/imported/blueGoblinTable.png-25a9b221821a69a22c2eca83657a208f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0.png"
-dest_files=["res://.godot/imported/pixil-frame-0.png-ad73aed19b00fd55eeaf2db0cae8f8ff.ctex"]
+source_file="res://images/enemys/blueGoblinTable.png"
+dest_files=["res://.godot/imported/blueGoblinTable.png-25a9b221821a69a22c2eca83657a208f.ctex"]
 
 [params]
 
