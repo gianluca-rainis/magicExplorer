@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 var player: Node2D
 
-var pv = Global.goblinPv 
-var damage = Global.goblinDamage
+var pv = Global.goblinBluPv 
+var damage = Global.goblinBluDamage
 
 func _physics_process(delta: float) -> void:
 	if player:
@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			$AnimatedSprite2D.play("default")
 			
-		velocity = direction * Global.goblinSpeed
+		velocity = direction * Global.goblinBluSpeed
 	
 	move_and_slide()
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://da7s1c8g1kplm"]
 
-[ext_resource type="Script" uid="uid://diedg66nqc3db" path="res://scripts/goblin.gd" id="1_6653p"]
+[ext_resource type="Script" uid="uid://6qc0bmoyo5b7" path="res://scripts/blueGoblin.gd" id="1_6653p"]
 [ext_resource type="Texture2D" uid="uid://btr2hefrmjfnt" path="res://images/enemys/blueGoblinTable.png" id="2_6653p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cq50o"]
