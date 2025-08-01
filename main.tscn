@@ -1,0 +1,196 @@
+[gd_scene load_steps=13 format=3 uid="uid://cjwpb23d4d3jg"]
+
+[ext_resource type="Script" uid="uid://bfep3phli2ri2" path="res://scripts/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://g65p1pxdmq5w" path="res://game.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cfla0mh2ti1br" path="res://images/background/resumeButton.png" id="3_5vw27"]
+[ext_resource type="Texture2D" uid="uid://c4c636yuswx3i" path="res://images/background/magicMenu.png" id="3_kek77"]
+[ext_resource type="Texture2D" uid="uid://be2a5rsulnb35" path="res://images/main/fireboltImage.png" id="4_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bgimwsmwf1s66" path="res://images/background/resumeButtonPressed.png" id="4_kek77"]
+[ext_resource type="Texture2D" uid="uid://bbod3e1fw04kd" path="res://images/background/settingsButton.png" id="5_4c57u"]
+[ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="5_efxa6"]
+[ext_resource type="Texture2D" uid="uid://cmtosc67rowwg" path="res://images/background/settingsButtonPressed.png" id="6_efxa6"]
+[ext_resource type="Texture2D" uid="uid://c5qu4w6m61ssj" path="res://images/background/quitButton.png" id="7_dg77c"]
+[ext_resource type="Texture2D" uid="uid://idry5xico7as" path="res://images/background/quitButtonPressed.png" id="8_ycdy4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4c57u"]
+texture = ExtResource("3_kek77")
+
+[node name="Main" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_0xm2m")
+
+[node name="game" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="PauseMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Background" type="ColorRect" parent="PauseMenu"]
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.627451)
+
+[node name="InfoPanel" type="Panel" parent="PauseMenu"]
+top_level = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 30.0
+offset_right = 350.0
+offset_bottom = 430.0
+grow_horizontal = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_4c57u")
+
+[node name="InfoContainer" type="HBoxContainer" parent="PauseMenu/InfoPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Magic1Container" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
+layout_mode = 2
+texture = ExtResource("4_4c57u")
+stretch_mode = 3
+
+[node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 30
+text = "Fire Bolt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 80
+text = "J"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Magic2Container" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
+layout_mode = 2
+texture = ExtResource("4_4c57u")
+stretch_mode = 3
+
+[node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 30
+text = "Fire Bolt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 80
+text = "K"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Magic3Container" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
+layout_mode = 2
+texture = ExtResource("4_4c57u")
+stretch_mode = 3
+
+[node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 30
+text = "Fire Bolt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 80
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="PauseMenu"]
+top_level = true
+layout_mode = 2
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -256.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Spacer" type="Control" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Resume" type="TextureButton" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_5vw27")
+texture_pressed = ExtResource("4_kek77")
+texture_hover = ExtResource("3_5vw27")
+
+[node name="Spacer2" type="Control" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Settings" type="TextureButton" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("5_4c57u")
+texture_pressed = ExtResource("6_efxa6")
+texture_hover = ExtResource("5_4c57u")
+
+[node name="Spacer3" type="Control" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Quit" type="TextureButton" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_dg77c")
+texture_pressed = ExtResource("8_ycdy4")
+texture_hover = ExtResource("7_dg77c")
+
+[node name="Spacer4" type="Control" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3

@@ -46,7 +46,7 @@ script = ExtResource("1_juwqh")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4c85s")
-frame_progress = 0.7923
+frame_progress = 0.539674
 
 [node name="DamageArea" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -4)

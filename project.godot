@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="magicExplorer"
-run/main_scene="uid://g65p1pxdmq5w"
+run/main_scene="uid://cjwpb23d4d3jg"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sblhgv0od8my"
-path="res://.godot/imported/fireboltInfo.png-59790ce760ae2f62aceb71c163773c11.ctex"
+uid="uid://be2a5rsulnb35"
+path="res://.godot/imported/fireboltImage.png-32e41eedb039142eb43b28811bfe1896.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/main/fireboltInfo.png"
-dest_files=["res://.godot/imported/fireboltInfo.png-59790ce760ae2f62aceb71c163773c11.ctex"]
+source_file="res://images/main/fireboltImage.png"
+dest_files=["res://.godot/imported/fireboltImage.png-32e41eedb039142eb43b28811bfe1896.ctex"]
 
 [params]
 

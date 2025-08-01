@@ -4,6 +4,9 @@ var player: Node2D
 
 var pv = Global.goblinBluPv 
 var damage = Global.goblinBluDamage
+var scoreAtKill = Global.goblinBluScore
+
+signal enemyKilled(points)
 
 func _physics_process(delta: float) -> void:
 	if player:
@@ -34,4 +37,5 @@ func take_damage(damage):
 		die()
 
 func die(): # The enemy die
+	emit_signal("enemyKilled", scoreAtKill)
 	queue_free()

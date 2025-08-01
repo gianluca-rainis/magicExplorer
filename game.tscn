@@ -87,6 +87,7 @@ sources/1 = SubResource("TileSetAtlasSource_vef74")
 sources/3 = SubResource("TileSetAtlasSource_hve3p")
 
 [node name="game" type="Node2D"]
+process_mode = 1
 script = ExtResource("1_fc0e3")
 enemyScenes = Array[PackedScene]([ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("3_ryrav")])
 
@@ -166,7 +167,9 @@ text = "Your Score: 0"
 [node name="scoreTimer" type="Timer" parent="."]
 autostart = true
 
-[node name="HearthsContainer" type="HBoxContainer" parent="."]
+[node name="HearthsLayer" type="CanvasLayer" parent="."]
+
+[node name="HearthsContainer" type="HBoxContainer" parent="HearthsLayer"]
 top_level = true
 offset_right = 40.0
 offset_bottom = 40.0
