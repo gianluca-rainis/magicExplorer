@@ -70,6 +70,7 @@ custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 
 [node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
+custom_minimum_size = Vector2(220, 192)
 layout_mode = 2
 texture = ExtResource("4_4c57u")
 stretch_mode = 3
@@ -97,8 +98,8 @@ custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 
 [node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
+custom_minimum_size = Vector2(220, 192)
 layout_mode = 2
-texture = ExtResource("4_4c57u")
 stretch_mode = 3
 
 [node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
@@ -106,7 +107,6 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 30
-text = "Fire Bolt"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -124,8 +124,8 @@ custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 
 [node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
+custom_minimum_size = Vector2(220, 192)
 layout_mode = 2
-texture = ExtResource("4_4c57u")
 stretch_mode = 3
 
 [node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
@@ -133,7 +133,6 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 30
-text = "Fire Bolt"
 horizontal_alignment = 1
 vertical_alignment = 1
 
