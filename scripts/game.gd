@@ -3,48 +3,131 @@ extends Node2D
 @export var enemyScenes: Array[PackedScene]
 
 @onready var containter = $HearthsLayer/HearthsContainer
-@onready var enemyTimer = $enemyTimer
 @onready var scoreTimer = $scoreTimer
-@onready var background = $background
-@onready var tileMap = $TileMapLayer
+@onready var gameOverBackground = $GameOverBg
+@onready var player = $player
 
 var score: int = 0
 var pv = Global.maxPv
-
 var isGameOver = false
 var wasHit = false
 
 var hearths: Array[TextureRect] = []
 var hearthsTexture = preload("res://images/main/hearth.png")
 
-var tileMapBackupData: Dictionary = {}
-var backgroundBackupTexture: Texture2D
+var currentRoom: Node2D = null
+var isChangingRoom = false
+var room_scenes := {
+	"room1": preload("res://scenes/rooms/room1.tscn"),
+	"room2": preload("res://scenes/rooms/room2.tscn"),
+	"room3": preload("res://scenes/rooms/room3.tscn")
+}
 
 func _ready() -> void: # First execution
-	for cell in tileMap.get_used_cells(): # save as Vector2: Vecror2 | Position as key
-		var tileDate = tileMap.get_cell_atlas_coords(cell)
-		var tileMapSourceId = tileMap.get_cell_source_id(cell)
-		tileMapBackupData[cell] = [tileDate, tileMapSourceId]
+	Global.change_room.connect(_on_change_room)
 	
-	backgroundBackupTexture = background.texture
+func start_game():
+	score = 0
+	pv = Global.maxPv
+	isGameOver = false
+	wasHit = false
+	gameOverBackground.visible = false
+	
+	$scoreTimer.start()
+	
+	$HeadUpDisplay.visible = true
+	$HearthsLayer.visible = true
+	
+	$HeadUpDisplay/GameOver.hide()
+	$HeadUpDisplay/RestartMessage.hide()
+	$HeadUpDisplay/FinalScore.hide()
+	$HeadUpDisplay/Score.show()
+	$HeadUpDisplay/Score.text = str(score)
+	
+	player.canMove = true
+	player.canCastMagic = true
+	player.position = Vector2(576, 600)
+	
+	for heart in hearths:
+		heart.queue_free()
+	hearths.clear()
+	
+	for i in range(Global.maxPv):
+		var heart = TextureRect.new()
+		heart.texture = hearthsTexture
+		heart.custom_minimum_size = Vector2(32, 32)
+		heart.expand = true
+		heart.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		hearths.append(heart)
+		containter.add_child(heart)
+		
+	load_room("room1", "", "")
 
-func _on_enemy_timer_timeout() -> void: # On end enemyTimer
-	if not get_tree().get_nodes_in_group("enemies") or get_tree().get_nodes_in_group("enemies").size() < 5:
-		var enemyScene = enemyScenes.pick_random()
+func _restart_game():
+	start_game()
+
+func load_room(room: String, door: String, direction_to_spawn: String) -> void:	
+	# Clear previous room
+	if currentRoom:
+		currentRoom.queue_free()
 		
-		var enemyIstance = enemyScene.instantiate()
+	for magic in get_tree().get_nodes_in_group("magics"):
+			magic.queue_free()
+		
+	for enemy in get_tree().get_nodes_in_group("enemies"):
+		enemy.queue_free()
 	
-		enemyIstance.position = Vector2(576, 150)
-		enemyIstance.player = $player
+	# Load new room
+	var scene: PackedScene = room_scenes.get(room)
+	
+	if not scene:
+		push_error("ERROR_ROOM_NOT_FOUND")
+		return
+	
+	currentRoom = scene.instantiate()
+	add_child(currentRoom)
+	
+	# Spawn player
+	var doorToSpown = currentRoom.get_node_or_null("Doors/" + door + "/Collision")
+	if doorToSpown:
+		var newPosition = doorToSpown.global_position
+			
+		if direction_to_spawn == "up":
+			newPosition.y -= 40
+		elif direction_to_spawn == "down":
+			newPosition.y += 40
+		elif direction_to_spawn == "left":
+			newPosition.x -= 40
+		elif direction_to_spawn == "right":
+			newPosition.x += 40
+		else:
+			newPosition = Vector2(559, 560)
 		
-		if enemyIstance.name == "BlueGoblin":
-			enemyIstance.position.y = 400
-		
-		enemyIstance.connect("enemyKilled", Callable(self, "_on_enemyKilled"))
-		
-		enemyIstance.add_to_group("enemies")
-		add_child(enemyIstance)
-		
+		player.position = newPosition
+	else:
+		player.position = Vector2(559, 560)
+	
+	# Enemy spawn
+	var enemySpawns = currentRoom.get_node_or_null("EnemySpawns")
+	if enemySpawns:
+		for spawn in enemySpawns.get_children():
+			var enemyScene = enemyScenes.pick_random()
+			var enemy = enemyScene.instantiate()
+			
+			enemy.position = spawn.global_position
+			enemy.player = player
+			enemy.connect("enemyKilled", Callable(self, "_on_enemyKilled"))
+			enemy.add_to_group("enemies")
+			add_child(enemy)
+
+func _on_change_room(target_room: String, target_door: String, direction_to_spawn: String):
+	if isChangingRoom:
+		return
+	isChangingRoom = true
+	load_room(target_room, target_door, direction_to_spawn)
+	await get_tree().create_timer(0.5).timeout
+	isChangingRoom = false
+
 func _on_enemyKilled(points):
 	score += int(points)
 	$HeadUpDisplay/Score.text = str(score)
@@ -78,15 +161,12 @@ func _controlGameOver() -> void:
 		$HeadUpDisplay/FinalScore.text = "Your Score: " + str(score)
 		$HeadUpDisplay/FinalScore.show()
 		$HeadUpDisplay/Score.hide()
-		
+		$"../PauseMenu".hide()
 		$scoreTimer.stop()
-		$enemyTimer.stop()
 		
-		$player.canMove = false
-		$player.canCastMagic = false
-		background.texture = preload("res://images/background/black.png")
-		tileMap.clear()
-		$player.position = Vector2(576, 500)
+		player.canMove = false
+		player.canCastMagic = false			
+		player.position = Vector2(576, 500)
 		
 		for magic in get_tree().get_nodes_in_group("magics"):
 			magic.queue_free()
@@ -95,46 +175,8 @@ func _controlGameOver() -> void:
 			enemy.queue_free()
 		
 		wasHit = true
+		gameOverBackground.visible = true
 		
 		await get_tree().create_timer(1).timeout
 		isGameOver = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-
-func start_game():
-	score = 0
-	pv = Global.maxPv
-	isGameOver = false
-	wasHit = false
-	
-	$enemyTimer.start()
-	$scoreTimer.start()
-	
-	$HeadUpDisplay.visible = true
-	$HearthsLayer.visible = true
-	
-	$HeadUpDisplay/GameOver.hide()
-	$HeadUpDisplay/RestartMessage.hide()
-	$HeadUpDisplay/FinalScore.hide()
-	$HeadUpDisplay/Score.show()
-	$HeadUpDisplay/Score.text = str(score)
-	
-	$player.canMove = true
-	$player.canCastMagic = true
-	$player.position = Vector2(576, 600)
-	
-	background.texture = backgroundBackupTexture
-	
-	for cell in tileMapBackupData: # Reload first tilemap
-		tileMap.set_cell(cell, tileMapBackupData[cell][1], tileMapBackupData[cell][0])
-	
-	for i in range(Global.maxPv):
-		var heart = TextureRect.new()
-		heart.texture = hearthsTexture
-		heart.custom_minimum_size = Vector2(32, 32)
-		heart.expand = true
-		heart.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		hearths.append(heart)
-		containter.add_child(heart)
-
-func _restart_game():
-	start_game()

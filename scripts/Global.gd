@@ -1,5 +1,8 @@
 extends Node
 
+# Signals
+signal change_room(target_room: String, target_door: String, direction_to_spawn: String)
+
 # Main constants
 const SPEED = 300.0
 const numMagics = 1

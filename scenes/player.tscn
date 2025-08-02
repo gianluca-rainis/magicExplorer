@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://ckwnhwt38rv3q" path="res://images/player/playerTable.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://cn8sck3tcwrxc" path="res://scripts/player.gd" id="1_onrkg"]
-[ext_resource type="PackedScene" uid="uid://cwyu3t3wxl1va" path="res://scenes/airWall.tscn" id="3_hqtel"]
-[ext_resource type="PackedScene" uid="uid://m4u22pur7q20" path="res://scenes/fireBolt.tscn" id="3_i3pqv"]
-[ext_resource type="PackedScene" uid="uid://ctrr3cte7o5vo" path="res://scenes/waterTrap.tscn" id="4_sweqy"]
+[ext_resource type="PackedScene" uid="uid://cwyu3t3wxl1va" path="res://scenes/spells/airWall.tscn" id="3_hqtel"]
+[ext_resource type="PackedScene" uid="uid://m4u22pur7q20" path="res://scenes/spells/fireBolt.tscn" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://ctrr3cte7o5vo" path="res://scenes/spells/waterTrap.tscn" id="4_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
