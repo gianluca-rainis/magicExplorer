@@ -1,0 +1,189 @@
+[gd_scene load_steps=14 format=4 uid="uid://g65p1pxdmq5w"]
+
+[ext_resource type="Texture2D" uid="uid://cfb4bakq5yxf2" path="res://images/background/backgroundFloor.png" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://bhcc3jgnhk1im" path="res://scripts/game.gd" id="1_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://is7stax5anea" path="res://scenes/goblin.tscn" id="2_7jktm"]
+[ext_resource type="PackedScene" uid="uid://b3bbltwhd0f5p" path="res://scenes/player.tscn" id="2_feb5d"]
+[ext_resource type="Texture2D" uid="uid://dywcce66l2s0u" path="res://images/tilemaps/tilemapRocks.png" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://da7s1c8g1kplm" path="res://scenes/blueGoblin.tscn" id="3_ryrav"]
+[ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="7_eow3j"]
+[ext_resource type="Texture2D" uid="uid://be2teooysqqj0" path="res://images/tilemaps/tilemapDoorsBlack.png" id="7_j5wjh"]
+[ext_resource type="Texture2D" uid="uid://2occpv5sog5f" path="res://images/tilemaps/tilemapMonocolor.png" id="8_vef74"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
+texture = ExtResource("3_feb5d")
+margins = Vector2i(62, 0)
+separation = Vector2i(2, 2)
+texture_region_size = Vector2i(64, 64)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -32.1048, 32.1048, -32.4645, 31.7451, 31.9249, -31.7451, 31.9249)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -32.1048, 32.1048, -32.4645, 31.7451, 31.9249, -31.7451, 31.9249)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, -31.7451, -31.9249, 32.1048, 31.9249, 32.1048, 32.1048, -6.56485, 25.9896, -22.932, 13.3995, -31.7451)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -32.1048, 32.1048, -32.4645, 31.7451, 31.9249, -31.7451, 31.9249)
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, 31.9249, -31.9249, -31.7451, 32.2846, -31.9249, 32.4645, 9.8023, 25.2702, 25.0903, 12.3203, 31.7451)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -32.1048, 32.1048, -32.4645, 31.7451, 31.9249, -31.7451, 31.9249)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -32.1048, 32.1048, -32.4645, 31.7451, 31.9249, -31.7451, 31.9249)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(32.4645, -31.9249, 32.2846, 31.9249, -8.903, 31.9249, -22.0327, 24.3709, -32.1048, 9.8023, -31.9249, -32.2846)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, 32.2846, 32.2846, 32.1048, 32.2846, -13.7592, -31.9249, -14.2988)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.9249, 32.1048, 32.1048, 32.1048, 31.9249, -32.1048, -13.7592, -32.2846, -25.8097, -22.2126, -31.7451, -9.8023)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(32.2846, -32.2846, 31.9249, 32.1048, -13.7592, 31.7451, -13.939, -31.7451)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.2846, -31.9249, 32.6444, -32.1048, 32.6444, 32.1048, -32.2846, 31.9249)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.9249, -32.1048, 32.1048, -32.4645, 31.9249, 13.7592, -32.1048, 14.1189)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.5652, -31.7451, 31.9249, -31.9249, 32.1048, 31.7451, -9.08286, 31.3853, -21.4931, 24.0111, -31.9249, 11.7807)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32.1048, 31.9249, 31.9249, 32.1048, 32.1048, -32.1048, -13.939, -31.9249, -24.9104, -24.0111, -31.9249, -10.3419)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, -32.1048, -32.1048, 31.5652, 11.0613, 31.9249, 25.2702, 25.2702, 31.5652, 11.0613, 32.1048, -32.1048)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.5652, -32.2846, 14.1189, -32.2846, 13.7592, 31.7451, -32.1048, 31.9249)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, -31.9249, -31.7451, 32.1048, 31.9249, 32.1048, 31.7451, -11.421, 25.0903, -23.1118, 13.7592, -31.9249)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vef74"]
+texture = ExtResource("7_j5wjh")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hve3p"]
+texture = ExtResource("8_vef74")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fc0e3"]
+physics_layer_0/collision_layer = 2
+sources/0 = SubResource("TileSetAtlasSource_feb5d")
+sources/1 = SubResource("TileSetAtlasSource_vef74")
+sources/3 = SubResource("TileSetAtlasSource_hve3p")
+
+[node name="game" type="Node2D"]
+process_mode = 1
+visible = false
+script = ExtResource("1_fc0e3")
+enemyScenes = Array[PackedScene]([ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("3_ryrav")])
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 576.0
+offset_bottom = 324.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_e2o6t")
+
+[node name="player" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(576, 600)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAEAAAAAAAIAAAAFAAEAAAABAAIAAAARAAEAAAABAAIAAAAVAAEAAAABAAIAAAAZAAEAAAABAAIAAAAdAAEAAAABAAIAAAApAAEAAAADAAQAAAAtAAEAAAABAAIAAAAxAAEAAAABAAIAAAA1AAEAAAABAAIAAAA5AAEAAAABAAIAAAA9AAEAAAABAAIAAABBAAEAAAABAAIAAABGAAEAAAACAAIAAABCAAEAAAABAAIAAABGACYAAAACAAQAAAABACYAAAAAAAQAAAAFACYAAAABAAQAAAAJACYAAAABAAQAAAANACYAAAABAAQAAAARACYAAAABAAQAAAAVACYAAAABAAQAAAAZACYAAAABAAQAAAAdACYAAAABAAQAAAAtACYAAAABAAQAAAAxACYAAAABAAQAAAA1ACYAAAABAAQAAAA5ACYAAAABAAQAAAA9ACYAAAABAAQAAABBACYAAAABAAQAAABCACYAAAABAAQAAAABACIAAAAAAAMAAAABAB4AAAAAAAMAAAABABoAAAAAAAMAAAABABYAAAAAAAMAAAABABIAAAAAAAMAAAABAA4AAAAAAAMAAAABAAoAAAAAAAMAAAABAAYAAAAAAAMAAAABAAUAAAAAAAMAAABGAAUAAAACAAMAAABGAAkAAAACAAMAAABGAA0AAAACAAMAAABGABEAAAACAAMAAABGABUAAAACAAMAAABGABkAAAACAAMAAABGAB0AAAACAAMAAABGACEAAAACAAMAAABGACIAAAACAAMAAAAeACYAAAAFAAIAAAApACYAAAADAAIAAAAeAAEAAAAFAAQAAAAgAAAAAwAAAAAAAAAhAAAAAwAAAAAAAAAiAAAAAwAAAAAAAAAjAAAAAwAAAAAAAAAkAAAAAwAAAAAAAAAlAAAAAwAAAAAAAAAmAAAAAwAAAAAAAAAnAAAAAwAAAAAAAAAgACgAAwABAAAAAAAhACgAAwABAAAAAAAiACgAAwABAAAAAAAjACgAAwABAAAAAAAkACgAAwABAAAAAAAlACgAAwABAAAAAAAmACgAAwABAAAAAAAnACgAAwABAAAAAAAJAAEAAAABAAIAAAANAAEAAAABAAIAAAA=")
+tile_set = SubResource("TileSet_fc0e3")
+
+[node name="enemyTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="HeadUpDisplay" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Score" type="Label" parent="HeadUpDisplay"]
+offset_left = 8.0
+offset_top = 57.0
+offset_right = 48.0
+offset_bottom = 88.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_eow3j")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="GameOver" type="Label" parent="HeadUpDisplay"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -431.0
+offset_top = -203.0
+offset_right = 431.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.486275, 0.054902, 0.054902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_eow3j")
+theme_override_font_sizes/font_size = 150
+text = "Game Over"
+
+[node name="FinalScore" type="Label" parent="HeadUpDisplay"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -15.5
+offset_right = 99.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.329412, 0.705882, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_eow3j")
+theme_override_font_sizes/font_size = 50
+text = "Your Score: 0"
+
+[node name="RestartMessage" type="Label" parent="HeadUpDisplay"]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -431.0
+offset_top = -288.0
+offset_right = 431.0
+offset_bottom = -137.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.184314, 0.545098, 0.145098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_eow3j")
+theme_override_font_sizes/font_size = 40
+text = "Press any key to restart."
+horizontal_alignment = 1
+
+[node name="scoreTimer" type="Timer" parent="."]
+
+[node name="HearthsLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="HearthsContainer" type="HBoxContainer" parent="HearthsLayer"]
+top_level = true
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="hit" from="player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="enemyTimer" to="." method="_on_enemy_timer_timeout"]
+[connection signal="timeout" from="scoreTimer" to="." method="_on_score_timer_timeout"]

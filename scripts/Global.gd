@@ -20,5 +20,16 @@ var maxPv = 3
 
 # Magics variables (may change during the game)
 var fireBoltSpeed = 400.0
-var fireBoltDamage = 1
+var fireBoltDamage = 1.5
 var fireBoltLifeTime = 1.0
+var fireBoltKnockSpeed = 400
+
+var airWallSpeed = 600.0
+var airWallDamage = 1.0
+var airWallLifeTime = 1.5
+var airWallKnockSpeed = 700
+
+var waterTrapSpeed = 0.0
+var waterTrapDamage = 2.5
+var waterTrapLifeTime = 3.0
+var waterTrapKnockSpeed = 600

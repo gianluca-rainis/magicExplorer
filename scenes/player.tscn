@@ -1,8 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://b3bbltwhd0f5p"]
+[gd_scene load_steps=21 format=3 uid="uid://b3bbltwhd0f5p"]
 
 [ext_resource type="Texture2D" uid="uid://ckwnhwt38rv3q" path="res://images/player/playerTable.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://cn8sck3tcwrxc" path="res://scripts/player.gd" id="1_onrkg"]
-[ext_resource type="PackedScene" uid="uid://m4u22pur7q20" path="res://fireBolt.tscn" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://cwyu3t3wxl1va" path="res://scenes/airWall.tscn" id="3_hqtel"]
+[ext_resource type="PackedScene" uid="uid://m4u22pur7q20" path="res://scenes/fireBolt.tscn" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://ctrr3cte7o5vo" path="res://scenes/waterTrap.tscn" id="4_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -125,6 +127,8 @@ scale = Vector2(0.539798, 0.509874)
 collision_mask = 3
 script = ExtResource("1_onrkg")
 fireboltScene = ExtResource("3_i3pqv")
+airwallScene = ExtResource("3_hqtel")
+waterTrapScene = ExtResource("4_sweqy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4flbx")

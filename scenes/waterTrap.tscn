@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://ctrr3cte7o5vo"]
+
+[ext_resource type="Script" uid="uid://bj6i7y63cpgtc" path="res://scripts/waterTrap.gd" id="1_8uqo3"]
+[ext_resource type="Texture2D" uid="uid://cm4k8d030n0ol" path="res://images/player/magics/waterTrapTable.png" id="1_tktwj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uqo3"]
+atlas = ExtResource("1_tktwj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umf7t"]
+atlas = ExtResource("1_tktwj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8u8q"]
+atlas = ExtResource("1_tktwj")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0acf2"]
+atlas = ExtResource("1_tktwj")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vvjea"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uqo3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umf7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8u8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0acf2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5lhpf"]
+
+[node name="waterTrap" type="Area2D"]
+script = ExtResource("1_8uqo3")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -3)
+scale = Vector2(2.14489, 1.87442)
+sprite_frames = SubResource("SpriteFrames_vvjea")
+frame_progress = 0.445699
+
+[node name="DamageArea" type="CollisionShape2D" parent="."]
+position = Vector2(2, -2)
+rotation = 1.5708
+scale = Vector2(-1.60751, -2.07079)
+shape = SubResource("CapsuleShape2D_5lhpf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

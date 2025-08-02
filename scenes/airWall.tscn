@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://cwyu3t3wxl1va"]
+
+[ext_resource type="Texture2D" uid="uid://v2jm8xpmrwx4" path="res://images/player/magics/airWallTable.png" id="1_nago5"]
+[ext_resource type="Script" uid="uid://cpq16cv1d3iv1" path="res://scripts/airWall.gd" id="1_ptodm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptodm"]
+atlas = ExtResource("1_nago5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vypb8"]
+atlas = ExtResource("1_nago5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_opp2k"]
+atlas = ExtResource("1_nago5")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lek5"]
+atlas = ExtResource("1_nago5")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hlljg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptodm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vypb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_opp2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lek5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nago5"]
+
+[node name="AirWall" type="Area2D"]
+script = ExtResource("1_ptodm")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -3)
+scale = Vector2(2.14489, 1.87442)
+sprite_frames = SubResource("SpriteFrames_hlljg")
+frame_progress = 0.847673
+
+[node name="DamageArea" type="CollisionShape2D" parent="."]
+position = Vector2(1, -3)
+rotation = 1.5708
+scale = Vector2(-2.9792, -1.15404)
+shape = SubResource("CapsuleShape2D_nago5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

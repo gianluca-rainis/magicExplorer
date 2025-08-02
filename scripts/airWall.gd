@@ -1,8 +1,8 @@
 extends Area2D
 
-var speed = Global.fireBoltSpeed
-var damage = Global.fireBoltDamage
-var knockSpeed = Global.fireBoltKnockSpeed
+var speed = Global.airWallSpeed
+var damage = Global.airWallDamage
+var knockSpeed = Global.airWallKnockSpeed
 var direction: Vector2 = Vector2.RIGHT
 
 # Called when the node enters the scene tree for the first time.

@@ -3,18 +3,35 @@ extends CharacterBody2D
 signal hit
 
 @export var fireboltScene: PackedScene
-var canMove = true
-var canCastMagic = true
+@export var airwallScene: PackedScene
+@export var waterTrapScene: PackedScene
+
+var canMove = false
+var canCastMagic = false
 var fireboltLaunched = false
+var airWallLaunched = false
+var waterTrapLaunched = false
 
 var last_move_direction: Vector2 = Vector2.RIGHT
 @onready var fireboltRechargeTimer = Timer.new()
+@onready var airwallRechargeTimer = Timer.new()
+@onready var waterTrapRechargeTimer = Timer.new()
 
 func _ready() -> void:
 	add_child(fireboltRechargeTimer)
 	fireboltRechargeTimer.wait_time = Global.fireBoltLifeTime
 	fireboltRechargeTimer.one_shot = true
 	fireboltRechargeTimer.connect("timeout", Callable(self, "_on_firebolt_recharged"))
+	
+	add_child(airwallRechargeTimer)
+	airwallRechargeTimer.wait_time = Global.airWallLifeTime
+	airwallRechargeTimer.one_shot = true
+	airwallRechargeTimer.connect("timeout", Callable(self, "_on_airwall_recharged"))
+	
+	add_child(waterTrapRechargeTimer)
+	waterTrapRechargeTimer.wait_time = Global.waterTrapLifeTime
+	waterTrapRechargeTimer.one_shot = true
+	waterTrapRechargeTimer.connect("timeout", Callable(self, "_on_waterTrap_recharged"))
 
 func _physics_process(delta: float) -> void:
 	if canMove:
@@ -59,6 +76,10 @@ func _physics_process(delta: float) -> void:
 func _unhandled_input(event):
 	if event.is_action_pressed("castMagic1"):  # Project > InputMap > castMagic1
 		launch_firebolt()
+	elif event.is_action_pressed("castMagic2"):
+		launch_waterTrap()
+	elif event.is_action_pressed("castMagic3"):
+		launch_airwall()
 
 func launch_firebolt():
 	if not fireboltLaunched and canCastMagic:
@@ -75,6 +96,38 @@ func launch_firebolt():
 		
 func _on_firebolt_recharged():
 	fireboltLaunched = false
+
+func launch_airwall():
+	if not airWallLaunched and canCastMagic:
+		var airWall = airwallScene.instantiate()
+		
+		airWall.add_to_group("magics")
+		airWall.position = position + last_move_direction * 50
+		airWall.direction = last_move_direction.normalized()
+		
+		get_parent().add_child(airWall)
+		
+		airWallLaunched = true
+		airwallRechargeTimer.start()
+		
+func _on_airwall_recharged():
+	airWallLaunched = false
+	
+func launch_waterTrap():
+	if not waterTrapLaunched and canCastMagic:
+		var waterTrap = waterTrapScene.instantiate()
+		
+		waterTrap.add_to_group("magics")
+		waterTrap.position = position + last_move_direction * 50
+		waterTrap.direction = last_move_direction.normalized()
+		
+		get_parent().add_child(waterTrap)
+		
+		waterTrapLaunched = true
+		waterTrapRechargeTimer.start()
+		
+func _on_waterTrap_recharged():
+	waterTrapLaunched = false
 
 func getDamage(enemy):
 	hit.emit(enemy.damage)

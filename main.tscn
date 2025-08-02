@@ -1,23 +1,37 @@
-[gd_scene load_steps=13 format=3 uid="uid://cjwpb23d4d3jg"]
+[gd_scene load_steps=21 format=3 uid="uid://cjwpb23d4d3jg"]
 
 [ext_resource type="Script" uid="uid://bfep3phli2ri2" path="res://scripts/main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://g65p1pxdmq5w" path="res://game.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://g65p1pxdmq5w" path="res://scenes/game.tscn" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://dxs4s33bbhfc8" path="res://sounds/soundTrack_strings.ogg" id="2_074og"]
 [ext_resource type="Texture2D" uid="uid://cfla0mh2ti1br" path="res://images/background/resumeButton.png" id="3_5vw27"]
 [ext_resource type="Texture2D" uid="uid://c4c636yuswx3i" path="res://images/background/magicMenu.png" id="3_kek77"]
 [ext_resource type="Texture2D" uid="uid://be2a5rsulnb35" path="res://images/main/fireboltImage.png" id="4_4c57u"]
 [ext_resource type="Texture2D" uid="uid://bgimwsmwf1s66" path="res://images/background/resumeButtonPressed.png" id="4_kek77"]
+[ext_resource type="Texture2D" uid="uid://cxdlh72ujdtw1" path="res://images/background/startButton.png" id="4_vivmo"]
+[ext_resource type="Texture2D" uid="uid://4wx6m8wr8bn" path="res://images/background/startButtonPressed.png" id="5_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://bbod3e1fw04kd" path="res://images/background/settingsButton.png" id="5_4c57u"]
 [ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="5_efxa6"]
+[ext_resource type="Texture2D" uid="uid://dpq0medn8go1t" path="res://images/main/airWallImage.png" id="6_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cmtosc67rowwg" path="res://images/background/settingsButtonPressed.png" id="6_efxa6"]
+[ext_resource type="Texture2D" uid="uid://x2e7axk2dj4m" path="res://images/main/waterTrap.png" id="6_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://c5qu4w6m61ssj" path="res://images/background/quitButton.png" id="7_dg77c"]
 [ext_resource type="Texture2D" uid="uid://idry5xico7as" path="res://images/background/quitButtonPressed.png" id="8_ycdy4"]
+[ext_resource type="Script" uid="uid://c2j2v4a1lsw5o" path="res://scripts/settings.gd" id="15_074og"]
+[ext_resource type="Texture2D" uid="uid://beevqiav1joag" path="res://images/background/titleScreen.png" id="15_yaehf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4c57u"]
 texture = ExtResource("3_kek77")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r462f"]
+texture = ExtResource("15_yaehf")
+
 [node name="Main" type="Node2D"]
 process_mode = 3
 script = ExtResource("1_0xm2m")
+
+[node name="backgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_074og")
+autoplay = true
 
 [node name="game" parent="." instance=ExtResource("1_ig7tw")]
 
@@ -100,6 +114,7 @@ layout_mode = 2
 [node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
 custom_minimum_size = Vector2(220, 192)
 layout_mode = 2
+texture = ExtResource("6_ycdy4")
 stretch_mode = 3
 
 [node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
@@ -107,6 +122,7 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 30
+text = "Water Trap"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -126,6 +142,7 @@ layout_mode = 2
 [node name="MagicImage" type="TextureRect" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
 custom_minimum_size = Vector2(220, 192)
 layout_mode = 2
+texture = ExtResource("6_dg77c")
 stretch_mode = 3
 
 [node name="MagicName" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
@@ -133,6 +150,7 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 30
+text = "Air Wall"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -144,6 +162,77 @@ theme_override_font_sizes/font_size = 80
 text = "L"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Settings" type="Control" parent="PauseMenu/InfoPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("15_074og")
+
+[node name="SettingsContainer" type="VBoxContainer" parent="PauseMenu/InfoPanel/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PauseMenu/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+
+[node name="SoundLevelContainer" type="HBoxContainer" parent="PauseMenu/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/SoundLevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Sound Level"
+
+[node name="SoundLevel" type="HSlider" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/SoundLevelContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="MusicContainer" type="HBoxContainer" parent="PauseMenu/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Soundtrack"
+
+[node name="SoundTracks" type="OptionButton" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WindowModeContainer" type="HBoxContainer" parent="PauseMenu/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/WindowModeContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "FullScreen"
+
+[node name="CheckFullscreen" type="CheckBox" parent="PauseMenu/InfoPanel/Settings/SettingsContainer/WindowModeContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_pressed = true
+alignment = 1
+icon_alignment = 1
 
 [node name="ButtonsContainer" type="HBoxContainer" parent="PauseMenu"]
 top_level = true
@@ -191,5 +280,155 @@ texture_pressed = ExtResource("8_ycdy4")
 texture_hover = ExtResource("7_dg77c")
 
 [node name="Spacer4" type="Control" parent="PauseMenu/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitleScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="TitleScreen"]
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.0941176, 0.294118, 1)
+
+[node name="InfoPanel" type="Panel" parent="TitleScreen"]
+top_level = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -450.0
+offset_right = 450.0
+offset_bottom = 500.0
+grow_horizontal = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_r462f")
+
+[node name="Settings" type="Control" parent="TitleScreen/InfoPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("15_074og")
+
+[node name="SettingsContainer" type="VBoxContainer" parent="TitleScreen/InfoPanel/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TitleScreen/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+
+[node name="SoundLevelContainer" type="HBoxContainer" parent="TitleScreen/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/SoundLevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Sound Level"
+
+[node name="SoundLevel" type="HSlider" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/SoundLevelContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="MusicContainer" type="HBoxContainer" parent="TitleScreen/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Soundtrack"
+
+[node name="SoundTracks" type="OptionButton" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WindowModeContainer" type="HBoxContainer" parent="TitleScreen/InfoPanel/Settings/SettingsContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/WindowModeContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "FullScreen"
+
+[node name="CheckFullscreen" type="CheckBox" parent="TitleScreen/InfoPanel/Settings/SettingsContainer/WindowModeContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+button_pressed = true
+alignment = 1
+icon_alignment = 1
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="TitleScreen"]
+top_level = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -256.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Spacer" type="Control" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Start" type="TextureButton" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_vivmo")
+texture_pressed = ExtResource("5_2cqfq")
+texture_hover = ExtResource("4_vivmo")
+
+[node name="Spacer2" type="Control" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Settings" type="TextureButton" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("5_4c57u")
+texture_pressed = ExtResource("6_efxa6")
+texture_hover = ExtResource("5_4c57u")
+
+[node name="Spacer3" type="Control" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Quit" type="TextureButton" parent="TitleScreen/ButtonsContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_dg77c")
+texture_pressed = ExtResource("8_ycdy4")
+texture_hover = ExtResource("7_dg77c")
+
+[node name="Spacer4" type="Control" parent="TitleScreen/ButtonsContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
