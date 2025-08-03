@@ -1,13 +1,13 @@
 # 🧙‍♂️ MagicExplorer  
-An action 2D game made with Godot Engine, where you play as a wizard casting spells to survive endless waves of enemies!
+An action 2D game made with Godot Engine, where you play as a wizard that's exploring a dungeon full of dangerous enemies!
 
 ---
 
 ## 📜 Description
 
-In *MagicExplorer*, you take on the role of a lone wizard, fighting off endless hordes of goblins and dangerous creatures. Armed at first with just the **Firebolt** spell, you must move swiftly, attack strategically, and defend yourself while increasing your score through kills and survival time.
+In *MagicExplorer*, you take on the role of a lone wizard, fighting off dangerous creatures while explorign a dungeon. Armed with only three spells, you must move swiftly, attack strategically, and defend yourself while increasing your score through kills and survival time.
 
-Your goal is simple: **survive as long as you can and reach the highest score**!
+Your goal is simple: **explore all the dungeon, beat more enemies that you can and reach the highest score**!
 
 ---
 
@@ -18,6 +18,8 @@ Your goal is simple: **survive as long as you can and reach the highest score**!
 +----------------+--------------------+
 | Move           | Arrow Keys or WASD |
 | Cast Firebolt  | `J`                |
+| Cast WaterTrap | `K`                |
+| Cast AirWall   | `L`                |
 | Pause / Menu   | `Esc`              |
 +----------------+--------------------+
 
@@ -27,34 +29,19 @@ Your goal is simple: **survive as long as you can and reach the highest score**!
 
 - Score system based on kills and time
 - Health system with visual heart indicators
-- Firebolt magic with cooldown and directional aiming
-- Multiple enemy types with different damage
-- Pause menu with options and key reminders
-- Pixel-art-style visuals
+- Spells with cooldown and directional aiming
+- Multiple enemy types with different damage, speed and bonus points
+- Pause menu with options, key reminders and settings
+- Pixel-art-style visuals (all the graphics were drawn by the author)
 
 ---
 
 ## 🛠️ Built With
 
-- **Godot Engine 4.x**
+- **Godot Engine 4.4.1**
 - GDScript
-- Custom PNG textures
+- Custom textures
 - Modular scene architecture (player, firebolt, enemies, UI, etc.)
-
----
-
-## 📂 Project Structure
-
-res://
-├── main.tscn       # Main scene
-├── game.gd         # Core game logic
-├── player.gd       # Player controls and spells
-├── goblin.gd       # Basic enemy
-├── firebolt.gd     # Spell projectile
-├── UI/             # HUD, pause menu, labels
-├── images/         # Sprites and textures
-└── Global.gd       # Global configuration
-
 
 ---
 
@@ -64,15 +51,8 @@ res://
 2. Import the project folder
 3. Run the `main.tscn` scene
 
----
-
-## 📌 To-Do / Future Ideas
-
-- Add more unlockable spells
-- Boss fights
-- More enemies
-- Upgrade and progression system
-- High score saving
+1. Download the .exe file
+2. Execute the file
 
 ---
 
