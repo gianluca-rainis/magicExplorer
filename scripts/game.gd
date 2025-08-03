@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var enemyScenes: Array[PackedScene]
+@export var bossScenes: Array[PackedScene]
 
 @onready var containter = $HearthsLayer/HearthsContainer
 @onready var scoreTimer = $scoreTimer
@@ -20,11 +21,37 @@ var isChangingRoom = false
 var room_scenes := {
 	"room1": preload("res://scenes/rooms/room1.tscn"),
 	"room2": preload("res://scenes/rooms/room2.tscn"),
-	"room3": preload("res://scenes/rooms/room3.tscn")
+	"room3": preload("res://scenes/rooms/room3.tscn"),
+	"room4": preload("res://scenes/rooms/room4.tscn"),
+	"room5": preload("res://scenes/rooms/room5.tscn"),
+	"room6": preload("res://scenes/rooms/room6.tscn"),
+	"room7": preload("res://scenes/rooms/room7.tscn"),
+	"room8": preload("res://scenes/rooms/room8.tscn"),
+	"room9": preload("res://scenes/rooms/room9.tscn"),
+	"room10": preload("res://scenes/rooms/room10.tscn"),
+	"room11": preload("res://scenes/rooms/room11.tscn"),
+	"room12": preload("res://scenes/rooms/room12.tscn"),
+	"room13": preload("res://scenes/rooms/room13.tscn"),
+	"room14": preload("res://scenes/rooms/room14.tscn"),
+	"room15": preload("res://scenes/rooms/room15.tscn"),
+	"room16": preload("res://scenes/rooms/room16.tscn"),
+	"room17": preload("res://scenes/rooms/room17.tscn"),
+	"room18": preload("res://scenes/rooms/room18.tscn"),
+	"room19": preload("res://scenes/rooms/room19.tscn"),
+	"room20": preload("res://scenes/rooms/room20.tscn"),
+	"room21": preload("res://scenes/rooms/room21.tscn"),
+	"room22": preload("res://scenes/rooms/room22.tscn"),
+	"room23": preload("res://scenes/rooms/room23.tscn"),
+	"room24": preload("res://scenes/rooms/room24.tscn"),
+	"room25": preload("res://scenes/rooms/room25.tscn"),
+	"room26": preload("res://scenes/rooms/room26.tscn"),
+	"room27": preload("res://scenes/rooms/room27.tscn"),
+	"room28": preload("res://scenes/rooms/room28.tscn")
 }
 
 func _ready() -> void: # First execution
 	Global.change_room.connect(_on_change_room)
+	Global.changed_max_pv.connect(_on_max_pv_changed)
 	
 func start_game():
 	score = 0
@@ -91,15 +118,16 @@ func load_room(room: String, door: String, direction_to_spawn: String) -> void:
 	var doorToSpown = currentRoom.get_node_or_null("Doors/" + door + "/Collision")
 	if doorToSpown:
 		var newPosition = doorToSpown.global_position
+		var offset = 40
 			
 		if direction_to_spawn == "up":
-			newPosition.y -= 40
+			newPosition.y -= offset
 		elif direction_to_spawn == "down":
-			newPosition.y += 40
+			newPosition.y += offset
 		elif direction_to_spawn == "left":
-			newPosition.x -= 40
+			newPosition.x -= offset
 		elif direction_to_spawn == "right":
-			newPosition.x += 40
+			newPosition.x += offset
 		else:
 			newPosition = Vector2(559, 560)
 		
@@ -111,14 +139,28 @@ func load_room(room: String, door: String, direction_to_spawn: String) -> void:
 	var enemySpawns = currentRoom.get_node_or_null("EnemySpawns")
 	if enemySpawns:
 		for spawn in enemySpawns.get_children():
-			var enemyScene = enemyScenes.pick_random()
-			var enemy = enemyScene.instantiate()
-			
-			enemy.position = spawn.global_position
-			enemy.player = player
-			enemy.connect("enemyKilled", Callable(self, "_on_enemyKilled"))
-			enemy.add_to_group("enemies")
-			add_child(enemy)
+			if spawn.name == "Boss":
+				if Global.defeated_bosses.get(room, false):
+					continue
+				
+				var bossScene = bossScenes.pick_random()
+				var boss = bossScene.instantiate()
+				
+				boss.position = spawn.global_position
+				boss.player = player
+				boss.roomName = room
+				boss.connect("enemyKilled", Callable(self, "_on_boss_killed"))
+				boss.add_to_group("enemies")
+				add_child(boss)
+			else:
+				var enemyScene = enemyScenes.pick_random()
+				var enemy = enemyScene.instantiate()
+				
+				enemy.position = spawn.global_position
+				enemy.player = player
+				enemy.connect("enemyKilled", Callable(self, "_on_enemyKilled"))
+				enemy.add_to_group("enemies")
+				add_child(enemy)
 
 func _on_change_room(target_room: String, target_door: String, direction_to_spawn: String):
 	if isChangingRoom:
@@ -127,7 +169,28 @@ func _on_change_room(target_room: String, target_door: String, direction_to_spaw
 	load_room(target_room, target_door, direction_to_spawn)
 	await get_tree().create_timer(0.5).timeout
 	isChangingRoom = false
+	
+func _on_max_pv_changed(new_value: int) -> void:
+	pv = new_value
+	
+	for heart in hearths:
+		heart.queue_free()
+	hearths.clear()
+	
+	for i in range(Global.maxPv):
+		var heart = TextureRect.new()
+		heart.texture = hearthsTexture
+		heart.custom_minimum_size = Vector2(32, 32)
+		heart.expand = true
+		heart.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		hearths.append(heart)
+		containter.add_child(heart)
 
+func _on_boss_killed(points: int, room: String):
+	score += int(points)
+	$HeadUpDisplay/Score.text = str(score)
+	Global.defeated_bosses[room] = true	
+	
 func _on_enemyKilled(points):
 	score += int(points)
 	$HeadUpDisplay/Score.text = str(score)

@@ -1,14 +1,15 @@
-[gd_scene load_steps=14 format=4 uid="uid://cdkltj3fxkixl"]
+[gd_scene load_steps=15 format=4 uid="uid://cg13ir8b58jnl"]
 
-[ext_resource type="Texture2D" uid="uid://cfb4bakq5yxf2" path="res://images/background/backgroundFloor.png" id="1_0yqos"]
-[ext_resource type="Texture2D" uid="uid://dywcce66l2s0u" path="res://images/tilemaps/tilemapRocks.png" id="2_geole"]
-[ext_resource type="Texture2D" uid="uid://be2teooysqqj0" path="res://images/tilemaps/tilemapDoorsBlack.png" id="3_itexc"]
-[ext_resource type="Texture2D" uid="uid://2occpv5sog5f" path="res://images/tilemaps/tilemapMonocolor.png" id="4_4t3sc"]
-[ext_resource type="Texture2D" uid="uid://cuvmsnpum7dkb" path="res://images/tilemaps/tileMapDoorRock.png" id="4_geole"]
-[ext_resource type="Script" uid="uid://ddvgjgsajyw13" path="res://scripts/doors.gd" id="6_itexc"]
+[ext_resource type="Texture2D" uid="uid://cfb4bakq5yxf2" path="res://images/background/backgroundFloor.png" id="1_516kh"]
+[ext_resource type="Texture2D" uid="uid://dywcce66l2s0u" path="res://images/tilemaps/tilemapRocks.png" id="2_npbkn"]
+[ext_resource type="Texture2D" uid="uid://be2teooysqqj0" path="res://images/tilemaps/tilemapDoorsBlack.png" id="3_f8jmd"]
+[ext_resource type="Texture2D" uid="uid://cuvmsnpum7dkb" path="res://images/tilemaps/tileMapDoorRock.png" id="4_sypdk"]
+[ext_resource type="Texture2D" uid="uid://2occpv5sog5f" path="res://images/tilemaps/tilemapMonocolor.png" id="5_kqu6v"]
+[ext_resource type="Script" uid="uid://ddvgjgsajyw13" path="res://scripts/doors.gd" id="6_c7pwt"]
+[ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="7_npbkn"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_geole"]
-texture = ExtResource("2_geole")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tp2jb"]
+texture = ExtResource("2_npbkn")
 margins = Vector2i(62, 0)
 separation = Vector2i(2, 2)
 texture_region_size = Vector2i(64, 64)
@@ -49,8 +50,8 @@ texture_region_size = Vector2i(64, 64)
 0:4/0 = 0
 0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.7451, -31.9249, -31.7451, 32.1048, 31.9249, 32.1048, 31.7451, -11.421, 25.0903, -23.1118, 13.7592, -31.9249)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_itexc"]
-texture = ExtResource("3_itexc")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50vm0"]
+texture = ExtResource("3_f8jmd")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 2:0/0 = 0
@@ -63,10 +64,9 @@ texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4t3sc"]
-texture = ExtResource("4_geole")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_27dsb"]
+texture = ExtResource("4_sypdk")
 margins = Vector2i(0, 32)
-separation = Vector2i(62, 0)
 texture_region_size = Vector2i(128, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64.8414, 32.0224, -63.5668, -32.341, 64.8414, -31.7038, 63.8855, 32.0224, 39.0323, 31.7038, -38.395, 32.0224)
@@ -83,15 +83,15 @@ texture_region_size = Vector2i(128, 64)
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3rw8b"]
-texture = ExtResource("4_4t3sc")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6r7di"]
+texture = ExtResource("5_kqu6v")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8aoxc"]
-texture = ExtResource("4_geole")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqv01"]
+texture = ExtResource("4_sypdk")
 margins = Vector2i(32, 0)
 separation = Vector2i(64, 0)
 texture_region_size = Vector2i(64, 128)
@@ -228,15 +228,15 @@ texture_region_size = Vector2i(64, 128)
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.8928, -64.0678, 32.4572, -62.9388, 31.3283, 62.9388, -32.4572, 63.5033)
 
-[sub_resource type="TileSet" id="TileSet_ps85p"]
+[sub_resource type="TileSet" id="TileSet_b3frf"]
 physics_layer_0/collision_layer = 2
-sources/0 = SubResource("TileSetAtlasSource_geole")
-sources/1 = SubResource("TileSetAtlasSource_itexc")
-sources/3 = SubResource("TileSetAtlasSource_3rw8b")
-sources/2 = SubResource("TileSetAtlasSource_4t3sc")
-sources/4 = SubResource("TileSetAtlasSource_8aoxc")
+sources/0 = SubResource("TileSetAtlasSource_tp2jb")
+sources/1 = SubResource("TileSetAtlasSource_50vm0")
+sources/3 = SubResource("TileSetAtlasSource_6r7di")
+sources/2 = SubResource("TileSetAtlasSource_27dsb")
+sources/4 = SubResource("TileSetAtlasSource_dqv01")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_geole"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27dsb"]
 size = Vector2(83.5, 51)
 
 [node name="Room" type="Node2D"]
@@ -247,29 +247,42 @@ offset_bottom = 324.0
 scale = Vector2(2, 2)
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("1_0yqos")
+texture = ExtResource("1_516kh")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAABAAEAAAAAAAIAAAAFAAEAAAABAAIAAAARAAEAAAABAAIAAAAVAAEAAAABAAIAAAAtAAEAAAABAAIAAAAxAAEAAAABAAIAAAA1AAEAAAABAAIAAAA5AAEAAAABAAIAAAA9AAEAAAABAAIAAABBAAEAAAABAAIAAABGAAEAAAACAAIAAABCAAEAAAABAAIAAABGACYAAAACAAQAAAABACYAAAAAAAQAAAAFACYAAAABAAQAAAAJACYAAAABAAQAAAANACYAAAABAAQAAAARACYAAAABAAQAAAAVACYAAAABAAQAAAAZACYAAAABAAQAAAAtACYAAAABAAQAAAAxACYAAAABAAQAAAA1ACYAAAABAAQAAAA5ACYAAAABAAQAAAA9ACYAAAABAAQAAABBACYAAAABAAQAAABCACYAAAABAAQAAAABACIAAAAAAAMAAAABAB4AAAAAAAMAAAABABoAAAAAAAMAAAABABYAAAAAAAMAAAABABIAAAAAAAMAAAABAA4AAAAAAAMAAAABAAoAAAAAAAMAAAABAAYAAAAAAAMAAAABAAUAAAAAAAMAAABGAAUAAAACAAMAAABGAAkAAAACAAMAAABGAA0AAAACAAMAAABGABEAAAACAAMAAABGABUAAAACAAMAAABGABkAAAACAAMAAABGAB0AAAACAAMAAABGACEAAAACAAMAAABGACIAAAACAAMAAAAJAAEAAAABAAIAAAANAAEAAAABAAIAAAAqAAEAAAABAAIAAAAeAAEAAAADAAQAAAAjAAEAAgAAAAAAAAAoAAEAAAAFAAQAAAAZAAEAAAABAAIAAAAbAAEAAAABAAIAAAArACYAAAABAAQAAAApACYAAAAFAAIAAAAdACYAAAADAAIAAAAhACYAAAAEAAIAAAAlACYAAAAEAAIAAAA=")
-tile_set = SubResource("TileSet_ps85p")
+tile_map_data = PackedByteArray("AAABAAEAAAAAAAIAAAAFAAEAAAABAAIAAAARAAEAAAABAAIAAAAVAAEAAAABAAIAAAAtAAEAAAABAAIAAAAxAAEAAAABAAIAAAA1AAEAAAABAAIAAAA5AAEAAAABAAIAAAA9AAEAAAABAAIAAABBAAEAAAABAAIAAABGAAEAAAACAAIAAABCAAEAAAABAAIAAABGACYAAAACAAQAAAABACYAAAAAAAQAAAAFACYAAAABAAQAAAAJACYAAAABAAQAAAANACYAAAABAAQAAAARACYAAAABAAQAAAAVACYAAAABAAQAAAAZACYAAAABAAQAAAAtACYAAAABAAQAAAAxACYAAAABAAQAAAA1ACYAAAABAAQAAAA5ACYAAAABAAQAAAA9ACYAAAABAAQAAABBACYAAAABAAQAAABCACYAAAABAAQAAAABACIAAAAAAAMAAAABAB4AAAAAAAMAAAABAAoAAAAAAAMAAAABAAYAAAAAAAMAAAABAAUAAAAAAAMAAABGAAUAAAACAAMAAABGAAkAAAACAAMAAABGAB0AAAACAAMAAABGACEAAAACAAMAAABGACIAAAACAAMAAAAJAAEAAAABAAIAAAANAAEAAAABAAIAAAAqAAEAAAABAAIAAAAZAAEAAAABAAIAAAAjACYAAgABAAAAAAApACYAAAAFAAIAAAArACYAAAABAAQAAAAdACYAAAADAAIAAAAdAAEAAAABAAIAAAAhAAEAAAABAAIAAAAlAAEAAAABAAIAAAAmAAEAAAABAAIAAABGAA0AAAACAAMAAABGABEAAAACAAMAAABGABUAAAACAAMAAABGABkAAAACAAMAAAABABoAAAAAAAMAAAABABYAAAAAAAMAAAABABIAAAAAAAMAAAABABEAAAAAAAMAAAABAA4AAAAAAAMAAAA=")
+tile_set = SubResource("TileSet_b3frf")
 
 [node name="EnemySpawns" type="Node2D" parent="."]
 
-[node name="EnemySpawn1" type="Marker2D" parent="EnemySpawns"]
-position = Vector2(240, 175)
-
-[node name="EnemySpawn2" type="Marker2D" parent="EnemySpawns"]
-position = Vector2(912, 175)
-
 [node name="Doors" type="Node2D" parent="."]
 
-[node name="DoorToRoom2" type="Area2D" parent="Doors"]
-script = ExtResource("6_itexc")
-target_room = "room2"
-target_door = "DoorToRoom1"
-direction_to_spawn = "up"
+[node name="DoorToRoom27" type="Area2D" parent="Doors"]
+script = ExtResource("6_c7pwt")
+target_room = "room27"
+target_door = "DoorToRoom28"
+direction_to_spawn = "down"
 
-[node name="Collision" type="CollisionShape2D" parent="Doors/DoorToRoom2"]
-position = Vector2(568, 30)
+[node name="Collision" type="CollisionShape2D" parent="Doors/DoorToRoom27"]
+position = Vector2(568, 610)
 scale = Vector2(0.930527, 1.07263)
-shape = SubResource("RectangleShape2D_geole")
+shape = SubResource("RectangleShape2D_27dsb")
+
+[node name="WonLabel" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 302.0
+offset_top = 107.0
+offset_right = 821.0
+offset_bottom = 207.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0.913725, 0.92549, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_npbkn")
+theme_override_font_sizes/font_size = 150
+text = "YOU WON !"

@@ -238,7 +238,7 @@ sources/4 = SubResource("TileSetAtlasSource_dqv01")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_27dsb"]
 size = Vector2(83.5, 51)
 
-[node name="Room1" type="Node2D"]
+[node name="Room" type="Node2D"]
 
 [node name="background" type="TextureRect" parent="."]
 offset_right = 576.0
@@ -285,5 +285,16 @@ direction_to_spawn = "left"
 [node name="Collision" type="CollisionShape2D" parent="Doors/DoorToRoom3"]
 position = Vector2(30, 328)
 rotation = 1.5708
+scale = Vector2(0.930527, 1.07263)
+shape = SubResource("RectangleShape2D_27dsb")
+
+[node name="DoorToRoom8" type="Area2D" parent="Doors"]
+script = ExtResource("6_50vm0")
+target_room = "room8"
+target_door = "DoorToRoom2"
+direction_to_spawn = "up"
+
+[node name="Collision" type="CollisionShape2D" parent="Doors/DoorToRoom8"]
+position = Vector2(568, 31)
 scale = Vector2(0.930527, 1.07263)
 shape = SubResource("RectangleShape2D_27dsb")

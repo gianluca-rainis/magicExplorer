@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://butb1xp0shdrx"]
+
+[ext_resource type="Script" uid="uid://clwefm23oa4o6" path="res://scripts/item.gd" id="1_6nem4"]
+[ext_resource type="Texture2D" uid="uid://d3xhverxl624g" path="res://images/main/hearth.png" id="1_x7afp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6nem4"]
+
+[node name="Heart" type="Area2D"]
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_6nem4")
+item_type = "heart"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x7afp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(3.17588, 2.53697)
+shape = SubResource("CapsuleShape2D_6nem4")

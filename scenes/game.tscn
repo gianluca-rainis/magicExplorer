@@ -1,16 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://g65p1pxdmq5w"]
+[gd_scene load_steps=9 format=3 uid="uid://g65p1pxdmq5w"]
 
 [ext_resource type="Script" uid="uid://bhcc3jgnhk1im" path="res://scripts/game.gd" id="1_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://is7stax5anea" path="res://scenes/enemies/goblin.tscn" id="2_7jktm"]
 [ext_resource type="PackedScene" uid="uid://b3bbltwhd0f5p" path="res://scenes/player.tscn" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://da7s1c8g1kplm" path="res://scenes/enemies/blueGoblin.tscn" id="3_ryrav"]
+[ext_resource type="PackedScene" uid="uid://c54bm7rypbcfv" path="res://scenes/enemies/blob.tscn" id="4_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://ba01hw3wxlade" path="res://scenes/enemies/boss/dragon.tscn" id="5_gee14"]
 [ext_resource type="Texture2D" uid="uid://do2jq66aj1q87" path="res://images/background/black.png" id="5_p57ef"]
 [ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="7_eow3j"]
 
 [node name="game" type="Node2D"]
 process_mode = 1
 script = ExtResource("1_fc0e3")
-enemyScenes = Array[PackedScene]([ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("3_ryrav")])
+enemyScenes = Array[PackedScene]([ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("2_7jktm"), ExtResource("3_ryrav"), ExtResource("4_u5sy4"), ExtResource("4_u5sy4")])
+bossScenes = Array[PackedScene]([ExtResource("5_gee14")])
 
 [node name="player" parent="." instance=ExtResource("2_feb5d")]
 z_index = 10
