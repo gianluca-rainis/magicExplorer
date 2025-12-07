@@ -14,6 +14,10 @@ extends Node2D
 @onready var settingsButtonPauseMenu = $PauseMenu/ButtonsContainer/Settings
 @onready var quitButtonPauseMenu = $PauseMenu/ButtonsContainer/Quit
 
+@onready var magic1SpellLevel = $PauseMenu/InfoPanel/InfoContainer/Magic1Container/ButtonAndLevel/SpellLevel
+@onready var magic2SpellLevel = $PauseMenu/InfoPanel/InfoContainer/Magic2Container/ButtonAndLevel/SpellLevel
+@onready var magic3SpellLevel = $PauseMenu/InfoPanel/InfoContainer/Magic3Container/ButtonAndLevel/SpellLevel
+
 @onready var pauseMenuInfoPanel = $PauseMenu/InfoPanel
 @onready var titleScreenInfoPanel = $TitleScreen/InfoPanel
 @onready var backupInfoPanelPauseMenuThemeOverrideStyle: StyleBox = pauseMenuInfoPanel.get_theme_stylebox("panel")

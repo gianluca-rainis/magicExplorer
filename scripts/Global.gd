@@ -44,16 +44,19 @@ var collected_items: Dictionary = {}
 var defeated_bosses: Dictionary = {}
 
 # Magics variables (may change during the game)
+var fireBoltLevel = 1
 var fireBoltSpeed = 400.0
 var fireBoltDamage = 1.5
 var fireBoltLifeTime = 1.0
 var fireBoltKnockSpeed = 400
 
+var airWallLevel = 1
 var airWallSpeed = 600.0
 var airWallDamage = 1.0
 var airWallLifeTime = 1.5
 var airWallKnockSpeed = 700
 
+var waterTrapLevel = 1
 var waterTrapSpeed = 0.0
 var waterTrapDamage = 2.5
 var waterTrapLifeTime = 3.0

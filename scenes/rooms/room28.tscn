@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://cg13ir8b58jnl"]
+[gd_scene load_steps=17 format=4 uid="uid://cg13ir8b58jnl"]
 
 [ext_resource type="Texture2D" uid="uid://cfb4bakq5yxf2" path="res://images/background/backgroundFloor.png" id="1_516kh"]
 [ext_resource type="Texture2D" uid="uid://dywcce66l2s0u" path="res://images/tilemaps/tilemapRocks.png" id="2_npbkn"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://2occpv5sog5f" path="res://images/tilemaps/tilemapMonocolor.png" id="5_kqu6v"]
 [ext_resource type="Script" uid="uid://ddvgjgsajyw13" path="res://scripts/doors.gd" id="6_c7pwt"]
 [ext_resource type="FontFile" uid="uid://dcxnjfp3ghxey" path="res://fonts/pixel.ttf" id="7_npbkn"]
+[ext_resource type="PackedScene" uid="uid://d3ka1ayr4q6ua" path="res://scenes/items/power.tscn" id="8_sypdk"]
+[ext_resource type="PackedScene" uid="uid://butb1xp0shdrx" path="res://scenes/items/heart.tscn" id="9_kqu6v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tp2jb"]
 texture = ExtResource("2_npbkn")
@@ -267,6 +269,7 @@ direction_to_spawn = "down"
 position = Vector2(568, 610)
 scale = Vector2(0.930527, 1.07263)
 shape = SubResource("RectangleShape2D_27dsb")
+disabled = true
 
 [node name="WonLabel" type="Label" parent="."]
 anchors_preset = 14
@@ -286,3 +289,23 @@ theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_npbkn")
 theme_override_font_sizes/font_size = 150
 text = "YOU WON !"
+
+[node name="Power" parent="." instance=ExtResource("8_sypdk")]
+position = Vector2(563, 283)
+item_id = "room28_1"
+
+[node name="Power2" parent="." instance=ExtResource("8_sypdk")]
+position = Vector2(476, 284)
+item_id = "room28_2"
+
+[node name="Power3" parent="." instance=ExtResource("8_sypdk")]
+position = Vector2(646, 283)
+item_id = "room28_3"
+
+[node name="Heart" parent="." instance=ExtResource("9_kqu6v")]
+position = Vector2(518, 355)
+item_id = "room28_1"
+
+[node name="Heart2" parent="." instance=ExtResource("9_kqu6v")]
+position = Vector2(603, 354)
+item_id = "room28_2"

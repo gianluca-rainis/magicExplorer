@@ -36,7 +36,6 @@ autoplay = true
 [node name="game" parent="." instance=ExtResource("1_ig7tw")]
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Background" type="ColorRect" parent="PauseMenu"]
 top_level = true
@@ -88,12 +87,23 @@ text = "Fire Bolt"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
-custom_minimum_size = Vector2(0, 150)
+[node name="ButtonAndLevel" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container/ButtonAndLevel"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 80
 text = "J"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpellLevel" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic1Container/ButtonAndLevel"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -116,12 +126,23 @@ text = "Water Trap"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
-custom_minimum_size = Vector2(0, 150)
+[node name="ButtonAndLevel" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container/ButtonAndLevel"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 80
 text = "K"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpellLevel" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic2Container/ButtonAndLevel"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -144,12 +165,23 @@ text = "Air Wall"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
-custom_minimum_size = Vector2(0, 150)
+[node name="ButtonAndLevel" type="VBoxContainer" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MagicCastButton" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container/ButtonAndLevel"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_efxa6")
 theme_override_font_sizes/font_size = 80
 text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpellLevel" type="Label" parent="PauseMenu/InfoPanel/InfoContainer/Magic3Container/ButtonAndLevel"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
 horizontal_alignment = 1
 vertical_alignment = 1
 

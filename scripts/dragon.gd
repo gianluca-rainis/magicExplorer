@@ -7,7 +7,7 @@ var damage = Global.dragonDamage
 var scoreAtKill = Global.dragonScore
 
 var knockback_velocity := Vector2.ZERO
-var knockback_time := 0.2
+var knockback_time := 0.1
 var knockback_timer := 0.0
 
 var roomName = ""
@@ -47,7 +47,7 @@ func take_damage(damage):
 		die()
 
 func apply_knockback(direction: Vector2, speed: int) -> void: # Knocked when hitten
-	knockback_velocity = direction.normalized() * speed
+	knockback_velocity = direction.normalized() * speed / 100
 	knockback_timer = knockback_time
 
 func die(): # The enemy die

@@ -21,19 +21,40 @@ func _on_body_entered(body):
 			var randomPower = randi_range(0, 2)
 			
 			if randomPower == 0:
+				Global.fireBoltLevel += 1
 				Global.fireBoltSpeed += 100.0
 				Global.fireBoltDamage += 1
-				Global.fireBoltLifeTime -= 0.25
+				
+				if Global.fireBoltLifeTime > 0:
+					Global.fireBoltLifeTime -= 0.25
+					
+					if Global.fireBoltLifeTime < 0:
+						Global.fireBoltLifeTime = 0
+				
 				Global.fireBoltKnockSpeed += 100
 			elif randomPower == 1:
+				Global.airWallLevel += 1
 				Global.airWallSpeed += 150.0
 				Global.airWallDamage += 0.5
-				Global.airWallLifeTime -= 0.5
+				
+				if Global.airWallLifeTime > 0:
+					Global.airWallLifeTime -= 0.5
+					
+					if Global.airWallLifeTime < 0:
+						Global.airWallLifeTime = 0
+				
 				Global.airWallKnockSpeed += 350
 			elif randomPower == 2:
+				Global.waterTrapLevel += 1
 				Global.waterTrapSpeed += 0.0
 				Global.waterTrapDamage += 0.5
-				Global.waterTrapLifeTime -= 1.0
+				
+				if Global.waterTrapLifeTime > 0:
+					Global.waterTrapLifeTime -= 1.0
+					
+					if Global.waterTrapLifeTime < 0:
+						Global.waterTrapLifeTime = 0
+				
 				Global.waterTrapKnockSpeed += 200
 
 		Global.collected_items[item_id] = true
