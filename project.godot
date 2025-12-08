@@ -12,7 +12,7 @@ config_version=5
 
 config/name="magicExplorer"
 run/main_scene="uid://cjwpb23d4d3jg"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]
 
@@ -24,7 +24,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/wakatime/plugin.cfg")
 
 [input]
 
