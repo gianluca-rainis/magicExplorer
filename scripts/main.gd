@@ -28,6 +28,8 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	add_to_group("main")
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	titleScreen.visible = true
 	game.visible = false
@@ -129,3 +131,23 @@ func _on_settings_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
+
+# Items connection handler for the signals
+func _connect_item_signals(item):
+	if not item.firebolt_levelup.is_connected(_on_firebolt_levelup):
+		item.firebolt_levelup.connect(_on_firebolt_levelup)
+	
+	if not item.airwall_levelup.is_connected(_on_airwall_levelup):
+		item.airwall_levelup.connect(_on_airwall_levelup)
+	
+	if not item.watertrap_levelup.is_connected(_on_watertrap_levelup):
+		item.watertrap_levelup.connect(_on_watertrap_levelup)
+
+func _on_firebolt_levelup():
+	magic1SpellLevel.text = "Level " + str(Global.fireBoltLevel)
+
+func _on_airwall_levelup():
+	magic2SpellLevel.text = "Level " + str(Global.airWallLevel)
+
+func _on_watertrap_levelup():
+	magic3SpellLevel.text = "Level " + str(Global.waterTrapLevel)

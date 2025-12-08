@@ -1,9 +1,15 @@
 extends Area2D
 
+signal firebolt_levelup
+signal airwall_levelup
+signal watertrap_levelup
+
 @export var item_type: String
 @export var item_id: String
 
 func _ready():
+	add_to_group("items")
+	
 	if Global.collected_items.get(item_id, false):
 		queue_free()
 	else:
@@ -12,6 +18,10 @@ func _ready():
 		$CollisionShape2D.disabled = false
 		
 		connect("body_entered", Callable(self, "_on_body_entered"))
+	
+	var main = get_tree().get_first_node_in_group("main")
+	if main:
+		main._connect_item_signals(self)
 
 func _on_body_entered(body):
 	if body.name == "player":
@@ -32,6 +42,8 @@ func _on_body_entered(body):
 						Global.fireBoltLifeTime = 0
 				
 				Global.fireBoltKnockSpeed += 100
+				
+				emit_signal("firebolt_levelup")
 			elif randomPower == 1:
 				Global.airWallLevel += 1
 				Global.airWallSpeed += 150.0
@@ -44,6 +56,8 @@ func _on_body_entered(body):
 						Global.airWallLifeTime = 0
 				
 				Global.airWallKnockSpeed += 350
+				
+				emit_signal("airwall_levelup")
 			elif randomPower == 2:
 				Global.waterTrapLevel += 1
 				Global.waterTrapSpeed += 0.0
@@ -56,6 +70,7 @@ func _on_body_entered(body):
 						Global.waterTrapLifeTime = 0
 				
 				Global.waterTrapKnockSpeed += 200
+				emit_signal("watertrap_levelup")
 
 		Global.collected_items[item_id] = true
 		queue_free()

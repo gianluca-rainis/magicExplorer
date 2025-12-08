@@ -36,6 +36,7 @@ autoplay = true
 [node name="game" parent="." instance=ExtResource("1_ig7tw")]
 
 [node name="PauseMenu" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Background" type="ColorRect" parent="PauseMenu"]
 top_level = true
