@@ -13,6 +13,7 @@ var airWallLaunched = false
 var waterTrapLaunched = false
 
 var last_move_direction: Vector2 = Vector2.RIGHT
+
 @onready var fireboltRechargeTimer = Timer.new()
 @onready var airwallRechargeTimer = Timer.new()
 @onready var waterTrapRechargeTimer = Timer.new()
