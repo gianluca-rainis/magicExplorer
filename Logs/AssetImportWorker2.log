@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.2f1 (a9779f353c9b) revision 11106207'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl" at "2026-02-21T10:36:58.026534Z"
 OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'it' Physical Memory: 16095 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-21T10:36:58Z
+Date: 2026-02-22T09:51:00Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl" at "2026-02-22T09:51:00.2104701Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-53279
+63825
 -licensingIpc
 LicenseClient-Gianl
 -job-worker-count
@@ -65,14 +65,14 @@ C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [21248]  Target information:
+Player connection [29764]  Target information:
 
-Player connection [21248]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2380547028 [EditorId] 2380547028 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [29764]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2665487599 [EditorId] 2665487599 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21248]  * "[IP] 192.168.1.48 [Port] 0 [Flags] 2 [Guid] 2380547028 [EditorId] 2380547028 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [29764]  * "[IP] 192.168.1.48 [Port] 0 [Flags] 2 [Guid] 2665487599 [EditorId] 2665487599 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21248] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21248] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [29764] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29764] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.2f1 (a9779f353c9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -100,54 +100,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002084 seconds.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              9aa5b3cf535b4d9f9be9f1ca5f14ed83
-  Correlation Id:          a84285c5155e22dbb6019aa253216f81
-  External correlation Id: 188455687429819356
-  Machine Id:              aW418Y1nn6jfA9745zGJhLnfEDk=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gianl" (connect: 0.00s, validation: 0.00s, handshake: 0.91s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl-notifications" at "2026-02-21T10:36:58.9393346Z"
-[Licensing::Module] Licensing Background thread has ended after 0.91s
-- Loaded All Assemblies, in  0.512 seconds
+Registered in 0.003765 seconds.
+- Loaded All Assemblies, in  1.131 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.358 seconds
-Domain Reload Profiling: 866ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  1.369 seconds
+Domain Reload Profiling: 2493ms
+	BeginReloadAssembly (259ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (270ms)
-		LoadAssemblies (129ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (677ms)
+		LoadAssemblies (252ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (267ms)
-			TypeCache.Refresh (265ms)
-				TypeCache.ScanAssembly (252ms)
+		AnalyzeDomain (671ms)
+			TypeCache.Refresh (668ms)
+				TypeCache.ScanAssembly (645ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (359ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1369ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (320ms)
+		SetupLoadedEditorAssemblies (1247ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (129ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			InitializePlatformSupportModulesInManaged (118ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (158ms)
+			ProcessInitializeOnLoadAttributes (328ms)
+			ProcessInitializeOnLoadMethodAttributes (636ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -156,14 +147,25 @@ Domain Reload Profiling: 866ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              752f4c20bc384ff8b278d508babfa344
+  Correlation Id:          fc3c2aad18b71187179e446627138ee2
+  External correlation Id: 478464437846110030
+  Machine Id:              aW418Y1nn6jfA9745zGJhLnfEDk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gianl" (connect: 0.00s, validation: 0.01s, handshake: 5.98s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl-notifications" at "2026-02-22T09:51:06.1934941Z"
+[Licensing::Module] Licensing Background thread has ended after 5.98s
+[Licensing::Module] Licensing is initialized (took 0.25s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 9072335735776-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.773 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
+- Loaded All Assemblies, in  2.213 seconds
+Refreshing native plugins compatible for Editor in 10.65 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -202,45 +204,45 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.773 seconds
-Domain Reload Profiling: 1540ms
-	BeginReloadAssembly (192ms)
+- Finished resetting the current domain, in  2.129 seconds
+Domain Reload Profiling: 4326ms
+	BeginReloadAssembly (711ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (494ms)
-		LoadAssemblies (390ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (109ms)
+	LoadAllAssembliesAndSetupDomain (1257ms)
+		LoadAssemblies (955ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (222ms)
-			TypeCache.Refresh (159ms)
-				TypeCache.ScanAssembly (147ms)
-			BuildScriptInfoCaches (50ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (773ms)
+		AnalyzeDomain (590ms)
+			TypeCache.Refresh (429ms)
+				TypeCache.ScanAssembly (386ms)
+			BuildScriptInfoCaches (126ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2130ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (640ms)
+		SetupLoadedEditorAssemblies (1784ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (151ms)
-			ProcessInitializeOnLoadAttributes (360ms)
-			ProcessInitializeOnLoadMethodAttributes (117ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (386ms)
+			ProcessInitializeOnLoadAttributes (934ms)
+			ProcessInitializeOnLoadMethodAttributes (442ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.44 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 <HackaTime> Got response
-{"id":1645569438,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"MagicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771670272.0,"is_write":false,"created_at":"2026-02-21T10:37:01.747Z","updated_at":"2026-02-21T10:37:01.748Z","fields_hash":"6f9c263dfa2aacf5bd0b3a483fab9d69","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":198931612}
+{"id":1653534323,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771753856.0,"is_write":false,"created_at":"2026-02-22T09:50:36.411Z","updated_at":"2026-02-22T09:50:36.412Z","fields_hash":"3ef784b614a249f11b155a0e10522bf7","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":199382689}
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
@@ -288,236 +290,405 @@ UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
 (Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
 
-Unloading 6874 unused Assets / (4.8 MB). Loaded Objects now: 7692.
-Memory consumption went from 154.2 MB to 149.4 MB.
-Total: 7.667800 ms (FindLiveObjects: 0.529900 ms CreateObjectMapping: 0.396000 ms MarkObjects: 4.689700 ms  DeleteObjects: 2.050700 ms)
+Unloading 6877 unused Assets / (5.1 MB). Loaded Objects now: 7710.
+Memory consumption went from 151.7 MB to 146.6 MB.
+Total: 12.384500 ms (FindLiveObjects: 0.661300 ms CreateObjectMapping: 0.463100 ms MarkObjects: 7.605900 ms  DeleteObjects: 3.651500 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 420359.704835 seconds.
-  path: Assets/images/background/titleScreen.png
-  artifactKey: Guid(ff02c4c8f77bda24196e19fd33fd4d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/images/background/titleScreen.png using Guid(ff02c4c8f77bda24196e19fd33fd4d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b612251c32281585a61ab47bf202c72') in 0.0866547 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.700 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+<HackaTime> Initializing...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:76)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 76)
+
+<HackaTime> Sending heartbeat...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:144)
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<WakaTime.Plugin/<SendHeartbeat>d__29> (WakaTime.Plugin/<SendHeartbeat>d__29&)
+WakaTime.Plugin:SendHeartbeat (bool)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:78)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.658 seconds
+Domain Reload Profiling: 1355ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (410ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (142ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (658ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (520ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (313ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+<HackaTime> Got response
+{"id":1653537802,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771753984.0,"is_write":false,"created_at":"2026-02-22T09:53:31.950Z","updated_at":"2026-02-22T09:53:31.951Z","fields_hash":"0e389175502ccb46f78228991ddcc4c7","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":199384497}
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:187)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 187)
+
+<HackaTime> Sent heartbeat!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:203)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
+
+Unloading 6875 unused Assets / (4.5 MB). Loaded Objects now: 7714.
+Memory consumption went from 156.3 MB to 151.8 MB.
+Total: 9.457500 ms (FindLiveObjects: 0.604800 ms CreateObjectMapping: 0.646000 ms MarkObjects: 5.712300 ms  DeleteObjects: 2.492300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.827614 seconds.
-  path: Assets/images/background/titleScreen.png
-  artifactKey: Guid(ff02c4c8f77bda24196e19fd33fd4d54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/images/background/titleScreen.png using Guid(ff02c4c8f77bda24196e19fd33fd4d54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea078afccc48abe86c99f5aa6016ffe4') in 0.0880683 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.705 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+<HackaTime> Initializing...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:76)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 76)
+
+<HackaTime> Sending heartbeat...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:144)
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<WakaTime.Plugin/<SendHeartbeat>d__29> (WakaTime.Plugin/<SendHeartbeat>d__29&)
+WakaTime.Plugin:SendHeartbeat (bool)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:78)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.682 seconds
+Domain Reload Profiling: 1385ms
+	BeginReloadAssembly (205ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (424ms)
+		LoadAssemblies (343ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (146ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (683ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (545ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+<HackaTime> Got response
+{"id":1653543678,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771754240.0,"is_write":false,"created_at":"2026-02-22T09:58:09.140Z","updated_at":"2026-02-22T09:58:09.141Z","fields_hash":"ab04b940eb4bc69794021071fbc81638","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":199387378}
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:187)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 187)
+
+<HackaTime> Sent heartbeat!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:203)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
+
+Unloading 6875 unused Assets / (4.5 MB). Loaded Objects now: 7717.
+Memory consumption went from 160.2 MB to 155.7 MB.
+Total: 8.911500 ms (FindLiveObjects: 1.086700 ms CreateObjectMapping: 0.402500 ms MarkObjects: 5.148300 ms  DeleteObjects: 2.272700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 21.314217 seconds.
-  path: Assets/Scenes/TitleScreen.unity
-  artifactKey: Guid(2fc5ab17116414d49994b6df175d32ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/TitleScreen.unity using Guid(2fc5ab17116414d49994b6df175d32ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40e21a3a1ce01ec5926b032871b1c3de') in 0.0048858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.721 seconds
+Refreshing native plugins compatible for Editor in 1.96 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+<HackaTime> Initializing...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:76)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-========================================================================
-Received Import Request.
-  Time since last request: 46.205800 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4ba6080a631f529c217c4285d9426cc') in 0.032434 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 76)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
-  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
- -> (artifact id: '15dbd8e16c31de8d643567250725de91') in 0.016977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+<HackaTime> Sending heartbeat...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:144)
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<WakaTime.Plugin/<SendHeartbeat>d__29> (WakaTime.Plugin/<SendHeartbeat>d__29&)
+WakaTime.Plugin:SendHeartbeat (bool)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:78)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
-  artifactKey: Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader using Guid(85187c2149c549c5b33f0cdb02836b17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6fa4e12e451c07ee0c3e4886da19d2d7') in 0.0097821 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
-  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99074343bf01d92ad7c621525dbe4a2d') in 0.0090061 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.965 seconds
+Domain Reload Profiling: 1685ms
+	BeginReloadAssembly (196ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (448ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (162ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (966ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (802ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (161ms)
+			ProcessInitializeOnLoadAttributes (494ms)
+			ProcessInitializeOnLoadMethodAttributes (128ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 1.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+<HackaTime> Got response
+{"id":1653544499,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771754368.0,"is_write":false,"created_at":"2026-02-22T09:58:46.368Z","updated_at":"2026-02-22T09:58:46.369Z","fields_hash":"65921b8b0342112e5aed990c757fef17","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":199387712}
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:187)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3da0f48bc477fd2f858cc1b56810fc31') in 0.0210505 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 187)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
-  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9cff4860d24da20973f9d75b8ef9a1a6') in 0.00924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+<HackaTime> Sent heartbeat!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:203)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
-  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d5ae2c9f8c6d41b2f249f4170523a93') in 0.0060129 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials
-  artifactKey: Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials using Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54d8474bce6a24cedad5ba3fb6312483') in 0.0058396 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Unloading 6875 unused Assets / (4.0 MB). Loaded Objects now: 7720.
+Memory consumption went from 160.3 MB to 156.2 MB.
+Total: 10.243200 ms (FindLiveObjects: 0.690400 ms CreateObjectMapping: 0.422100 ms MarkObjects: 6.383200 ms  DeleteObjects: 2.744700 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Resources/Style Sheets
-  artifactKey: Guid(4aecb92fff08436c8303b10eab8da368) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Style Sheets using Guid(4aecb92fff08436c8303b10eab8da368) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '243dac77b2ca19287d7a1cb953ae8f49') in 0.0042441 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/TextMesh Pro/Resources
-  artifactKey: Guid(243e06394e614e5d99fab26083b707fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources using Guid(243e06394e614e5d99fab26083b707fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fa925ce037cd49dbc6b68f9b4f943d66') in 0.0052738 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
-  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8f28b84c8fabf3428ecece8ee39483c8') in 0.006373 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
-  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d30beaaa50215f0cbc5be41d2e32d2c') in 0.0096175 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/TextMesh Pro/Resources/Sprite Assets
-  artifactKey: Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Sprite Assets using Guid(512a49d95c0c4332bdd98131869c23c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47f720dcd26fcfebdb037b93d14480fb') in 0.0052143 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
-  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61bac52c4525c16a8c53a7996736b279') in 0.0063844 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader
-  artifactKey: Guid(0178fcb869bafef4690d177d31d17db8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader using Guid(0178fcb869bafef4690d177d31d17db8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '610184ab5a4f2848ff959858533b9911') in 0.0087879 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/TextMesh Pro/Fonts
-  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e541b745c8d321f811b74dcd921e00c7') in 0.0051225 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
-  artifactKey: Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader using Guid(c8d12adcee749c344b8117cf7c7eb912) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64e225876095fe5b4e52b4b4fee140e5') in 0.0077247 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
-  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfbb2e3a936b9d5b0814786608a397ac') in 0.0369166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
-  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '161e05c9d6e7ed5324f295daadf8a31d') in 0.0078964 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/TextMesh Pro/Shaders
-  artifactKey: Guid(e9f693669af91aa45ad615fc681ed29f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders using Guid(e9f693669af91aa45ad615fc681ed29f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66f7b1434323d7ba130ab7593a874d45') in 0.0076417 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl
-  artifactKey: Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl using Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '418c92f706a45915d48fc9dda8457bef') in 0.0102423 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
-  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a021d38f585080965dafcfa06554a4cd') in 0.0106135 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
-  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cadc29894a382177230e89557906b7a6') in 0.0140504 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09a229fec4d300e16cf666aa5988d904') in 0.0406099 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
-  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e66cc49e220128a86a9b91776dfeb5da') in 0.009275 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0
