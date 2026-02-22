@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 432410981}
   m_Layer: 0
   m_Name: Door3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2339,7 +2339,7 @@ GameObject:
   - component: {fileID: 590203838}
   m_Layer: 0
   m_Name: Door1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2895,7 +2895,7 @@ GameObject:
   - component: {fileID: 779352568}
   m_Layer: 0
   m_Name: Door2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3579,7 +3579,7 @@ GameObject:
   - component: {fileID: 934996522}
   m_Layer: 0
   m_Name: TilemapWalls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 1054375182}
   m_Layer: 0
   m_Name: TilemapWalls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6940,7 +6940,7 @@ GameObject:
   - component: {fileID: 1617011504}
   m_Layer: 0
   m_Name: Door1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

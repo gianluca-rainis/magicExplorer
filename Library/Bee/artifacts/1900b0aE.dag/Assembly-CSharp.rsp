@@ -472,14 +472,20 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/AirWall.cs"
 "Assets/Scripts/DoorScript.cs"
+"Assets/Scripts/EnemyAI.cs"
+"Assets/Scripts/EnemyHealth.cs"
+"Assets/Scripts/FireBolt.cs"
 "Assets/Scripts/HealthSystem.cs"
 "Assets/Scripts/MusicController.cs"
 "Assets/Scripts/PauseMenuPanel.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/SettingsPanel.cs"
+"Assets/Scripts/SpellBase.cs"
 "Assets/Scripts/TitleScreen.cs"
+"Assets/Scripts/WaterTrap.cs"
 -langversion:9.0
 /deterministic
 /optimize+
