@@ -473,6 +473,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/MusicController.cs"
+"Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SettingsPanel.cs"
 "Assets/Scripts/TitleScreen.cs"
 -langversion:9.0
