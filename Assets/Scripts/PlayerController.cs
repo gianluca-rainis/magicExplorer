@@ -28,11 +28,11 @@ public class PlayerController : MonoBehaviour
 
         if (movement.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-0.8f, 0.8f, 1);
         }
         else if (movement.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(0.8f, 0.8f, 1);
         }
     }
 

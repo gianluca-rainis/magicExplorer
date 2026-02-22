@@ -20,16 +20,21 @@ public class SettingsPanel : MonoBehaviour
     {
         if (isOpen)
         {
-            panel.anchoredPosition = Vector2.Lerp(panel.anchoredPosition, shownPosition, Time.deltaTime * speed);
+            panel.anchoredPosition = Vector2.Lerp(panel.anchoredPosition, shownPosition, Time.unscaledDeltaTime * speed);
         }
         else
         {
-            panel.anchoredPosition = Vector2.Lerp(panel.anchoredPosition, hiddenPosition, Time.deltaTime * speed);
+            panel.anchoredPosition = Vector2.Lerp(panel.anchoredPosition, hiddenPosition, Time.unscaledDeltaTime * speed);
         }
     }
 
     public void ToggleMenu()
     {
         isOpen = !isOpen;
+    }
+
+    public void CloseMenu()
+    {
+        isOpen = false;
     }
 }

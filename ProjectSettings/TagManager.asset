@@ -50,5 +50,8 @@ TagManager:
   - name: Player
     uniqueID: 1118948629
     locked: 0
+  - name: Canvas
+    uniqueID: 1675020575
+    locked: 0
   m_RenderingLayers:
   - Default
