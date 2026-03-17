@@ -1,10 +1,9 @@
-database is locked
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.2f1 (a9779f353c9b) revision 11106207'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl" at "2026-02-22T11:40:27.9692165Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl" at "2026-03-17T09:34:38.324213Z"
 OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'it' Physical Memory: 16095 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-22T11:40:27Z
+Date: 2026-03-17T09:34:38Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe
@@ -18,7 +17,7 @@ C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59368
+50083
 -licensingIpc
 LicenseClient-Gianl
 -job-worker-count
@@ -66,14 +65,16 @@ C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [19088]  Target information:
+Player connection [2296]  Target information:
 
-Player connection [19088]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1146680242 [EditorId] 1146680242 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [2296]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 414921629 [EditorId] 414921629 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19088]  * "[IP] 192.168.1.48 [Port] 0 [Flags] 2 [Guid] 1146680242 [EditorId] 1146680242 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [2296]  * "[IP] 172.21.224.1 [Port] 0 [Flags] 2 [Guid] 414921629 [EditorId] 414921629 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19088] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [19088] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2296]  * "[IP] 192.168.18.14 [Port] 0 [Flags] 2 [Guid] 414921629 [EditorId] 414921629 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2296] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2296] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +86,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 642.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.2f1 (a9779f353c9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -101,58 +102,58 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.556176 seconds.
-- Loaded All Assemblies, in  3.821 seconds
+Registered in 0.034954 seconds.
+- Loaded All Assemblies, in  1.520 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              9f4f93ae12914ab1ae360628bb8a599f
-  Correlation Id:          bf891a908af9ba881a1e96022863529e
-  External correlation Id: 1361030381447872745
-  Machine Id:              aW418Y1nn6jfA9745zGJhLnfEDk=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gianl" (connect: 0.00s, validation: 0.00s, handshake: 19.74s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl-notifications" at "2026-02-22T11:40:47.7181548Z"
-[Licensing::Module] Licensing Background thread has ended after 19.75s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.599 seconds
-Domain Reload Profiling: 10408ms
-	BeginReloadAssembly (415ms)
+- Finished resetting the current domain, in  1.725 seconds
+Domain Reload Profiling: 3226ms
+	BeginReloadAssembly (337ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (2628ms)
-	LoadAllAssembliesAndSetupDomain (685ms)
-		LoadAssemblies (410ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (180ms)
+	LoadAllAssembliesAndSetupDomain (914ms)
+		LoadAssemblies (326ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (675ms)
-			TypeCache.Refresh (671ms)
-				TypeCache.ScanAssembly (643ms)
+		AnalyzeDomain (910ms)
+			TypeCache.Refresh (906ms)
+				TypeCache.ScanAssembly (879ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (6600ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1726ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (6496ms)
+		SetupLoadedEditorAssemblies (1669ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (82ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (162ms)
-			ProcessInitializeOnLoadAttributes (621ms)
-			ProcessInitializeOnLoadMethodAttributes (5625ms)
+			InitializePlatformSupportModulesInManaged (158ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (365ms)
+			ProcessInitializeOnLoadMethodAttributes (945ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              2030aab52262424bb07e5ed2e57f47de
+  Correlation Id:          a1fa4bbc6cfbee982c2e21211669f66d
+  External correlation Id: 8374424731494134234
+  Machine Id:              aW418Y1nn6jfA9745zGJhLnfEDk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gianl" (connect: 0.00s, validation: 0.00s, handshake: 6.88s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl-notifications" at "2026-03-17T09:34:45.2074582Z"
+[Licensing::Module] Licensing Background thread has ended after 6.88s
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -163,8 +164,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.778 seconds
-Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+- Loaded All Assemblies, in  3.267 seconds
+Refreshing native plugins compatible for Editor in 2.28 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -203,45 +204,45 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.849 seconds
-Domain Reload Profiling: 5616ms
-	BeginReloadAssembly (358ms)
+- Finished resetting the current domain, in  1.940 seconds
+Domain Reload Profiling: 5189ms
+	BeginReloadAssembly (462ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (78ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (1220ms)
-		LoadAssemblies (850ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (125ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (139ms)
+	LoadAllAssembliesAndSetupDomain (2487ms)
+		LoadAssemblies (1858ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (548ms)
-			TypeCache.Refresh (423ms)
-				TypeCache.ScanAssembly (399ms)
-			BuildScriptInfoCaches (103ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (3850ms)
+		AnalyzeDomain (918ms)
+			TypeCache.Refresh (652ms)
+				TypeCache.ScanAssembly (609ms)
+			BuildScriptInfoCaches (237ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1940ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3003ms)
+		SetupLoadedEditorAssemblies (1601ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (18ms)
-			BeforeProcessingInitializeOnLoad (282ms)
-			ProcessInitializeOnLoadAttributes (1288ms)
-			ProcessInitializeOnLoadMethodAttributes (1395ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (0ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (351ms)
+			ProcessInitializeOnLoadAttributes (869ms)
+			ProcessInitializeOnLoadMethodAttributes (349ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.12 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 <HackaTime> Got response
-{"id":1653652178,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1771760512.0,"is_write":false,"created_at":"2026-02-22T11:40:55.602Z","updated_at":"2026-02-22T11:40:55.604Z","fields_hash":"0696fd1b6cf7745abd964e06c30ce473","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":199436668}
+{"id":1782434668,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1773740032.0,"is_write":false,"created_at":"2026-03-17T09:34:26.695Z","updated_at":"2026-03-17T09:34:26.699Z","fields_hash":"78cb6d33792d4b6f4550b5cfb5743de0","source_type":"direct_entry","ip_address":"185.122.224.74","ysws_program":"nothing","deleted_at":null,"raw_data":null,"raw_heartbeat_upload_id":215051008}
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
@@ -289,27 +290,39 @@ UnityEngine.AsyncOperation:InvokeCompletionEvent ()
 
 (Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
 
-Unloading 6878 unused Assets / (3.2 MB). Loaded Objects now: 7711.
-Memory consumption went from 153.8 MB to 150.6 MB.
-Total: 16.791700 ms (FindLiveObjects: 2.105000 ms CreateObjectMapping: 1.098400 ms MarkObjects: 9.698700 ms  DeleteObjects: 3.886900 ms)
+Unloading 6888 unused Assets / (4.9 MB). Loaded Objects now: 7721.
+Memory consumption went from 151.9 MB to 147.0 MB.
+Total: 17.874000 ms (FindLiveObjects: 3.088200 ms CreateObjectMapping: 0.499800 ms MarkObjects: 10.319800 ms  DeleteObjects: 3.963900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 544.670489 seconds.
-  path: Assets/Scenes/FirstLevel.unity
-  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/FirstLevel.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ea55b41a7dc9259a303e3abc2249dbb') in 0.0981304 seconds
+  Time since last request: 317312.550674 seconds.
+  path: Assets/Images/player/magics/FireBoltAnimation.anim
+  artifactKey: Guid(c14f001c2e555d04c898c52b47ed5ce6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Images/player/magics/FireBoltAnimation.anim using Guid(c14f001c2e555d04c898c52b47ed5ce6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '577f3258de93e890a7fa199e6afc3844') in 0.1693343 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(fd8f1a318c064544eb66187f198e40b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/PlayerController.cs using Guid(fd8f1a318c064544eb66187f198e40b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb878ae780d6a66029de8f2ca732da5b') in 0.0508703 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000026 seconds.
+  path: Assets/Images/player/magics/FireBoltAnimation.controller
+  artifactKey: Guid(689f069e7e4cb90479bf1cb3ab64eb37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Images/player/magics/FireBoltAnimation.controller using Guid(689f069e7e4cb90479bf1cb3ab64eb37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c168baf826ae6c0af8c2b23a78d49db7') in 0.013085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 901.536764 seconds.
+  path: Assets/Prefabs/AirWall.prefab
+  artifactKey: Guid(015e93687c01af640840a7588847b67f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/AirWall.prefab using Guid(015e93687c01af640840a7588847b67f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54cf010dee3a633b89e0aa31cc943261') in 0.1904923 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.805715 seconds.
+  path: Assets/Prefabs/WaterTrap.prefab
+  artifactKey: Guid(176fd45e9295bff43a652f8b39aa9227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WaterTrap.prefab using Guid(176fd45e9295bff43a652f8b39aa9227) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '183b9b199cfeed3b9edda2f9fb56c9c2') in 1.1519736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
