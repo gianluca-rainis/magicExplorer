@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class WaterTrap : SpellBase
 {
+    protected override bool ShouldRotateWithDirection => false;
+    protected override bool ShouldDestroyOnWallCollision => false;
+
     /* public new int damage = 2;
     public new float speed = 0f;
     public new float duration = 10f; */

@@ -10,6 +10,8 @@ public class DoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            DestroyAllActiveSpells();
+
             nextRoom.SetActive(true);
 
             if (playerSpawnPoint != null)
@@ -18,6 +20,16 @@ public class DoorScript : MonoBehaviour
             }
 
             currentRoom.SetActive(false);
+        }
+    }
+
+    private void DestroyAllActiveSpells()
+    {
+        SpellBase[] activeSpells = FindObjectsByType<SpellBase>(FindObjectsSortMode.None);
+        
+        foreach (SpellBase spell in activeSpells)
+        {
+            Destroy(spell.gameObject);
         }
     }
 }

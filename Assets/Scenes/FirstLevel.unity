@@ -2293,7 +2293,7 @@ GameObject:
   - component: {fileID: 572563196}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8181,6 +8181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
+  fireboltPrefab: {fileID: 3036443041477551273, guid: 39b9151d6b8869d4abd8c49e7b905559, type: 3}
+  airwallPrefab: {fileID: 7447328187617538313, guid: 015e93687c01af640840a7588847b67f, type: 3}
+  watertrapPrefab: {fileID: 1949921742015468000, guid: 176fd45e9295bff43a652f8b39aa9227, type: 3}
+  spellSpawnDistance: 0.75
 --- !u!212 &1974045162
 SpriteRenderer:
   serializedVersion: 2
