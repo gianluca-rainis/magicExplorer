@@ -4,8 +4,11 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHP = 3;
     public float currentHP;
+    public float damageImmortalTime = 2f;
 
     public System.Action onHealthChanged;
+
+    private float lastDamageTime = -Mathf.Infinity;
 
     void Start()
     {
@@ -15,6 +18,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (Time.time < lastDamageTime + damageImmortalTime)
+        {
+            return;
+        }
+
+        lastDamageTime = Time.time;
         currentHP -= damage;
 
         if (currentHP < 0)

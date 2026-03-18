@@ -13,7 +13,13 @@ public class WaterTrap : SpellBase
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<EnemyHealth>()?.TakeDamage(damage);
+            Enemy enemy = other.GetComponent<Enemy>();
+            
+            if (enemy != null)
+            {
+                enemy.ApplySpellImpact(damage, direction, spellKnockback);
+            }
+
             Destroy(gameObject);
         }
     }

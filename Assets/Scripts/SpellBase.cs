@@ -3,10 +3,11 @@ using UnityEngine;
 public class SpellBase : MonoBehaviour
 {
     public int damage = 1;
+    public float spellKnockback = 2f;
     public float speed = 5f;
     public float duration = 2f;
     public float recastTimeGap = 5f;
-    [SerializeField] private float spriteAngleOffset = 0f;
+    private float spriteAngleOffset = 0f;
     protected virtual bool ShouldRotateWithDirection => true;
     protected virtual bool ShouldDestroyOnWallCollision => true;
 
@@ -157,7 +158,13 @@ public class SpellBase : MonoBehaviour
 
         if (otherObject.CompareTag("Enemy"))
         {
-            otherObject.GetComponent<EnemyHealth>()?.TakeDamage(damage);
+            Enemy enemy = otherObject.GetComponent<Enemy>();
+
+            if (enemy != null)
+            {
+                enemy.ApplySpellImpact(damage, direction, spellKnockback);
+            }
+
             Destroy(gameObject);
             
             return;

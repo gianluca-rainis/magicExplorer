@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float pushPower = 3f;
     [SerializeField] private FireBolt fireboltPrefab;
     [SerializeField] private AirWall airwallPrefab;
     [SerializeField] private WaterTrap watertrapPrefab;
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
+
+    private const float movementEpsilon = 0.0001f;
 
     private Vector2 movement;
     private Vector2 lastFacingDirection = Vector2.right;
@@ -36,9 +39,13 @@ public class PlayerController : MonoBehaviour
             lastFacingDirection = movement.normalized;
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetBool("Moving", movement.x != 0 || movement.y != 0);
+        Vector2 facingDirection = lastFacingDirection == Vector2.zero ? Vector2.right : lastFacingDirection;
+        Vector2 animDirection = movement.sqrMagnitude > movementEpsilon ? GetCardinalDirection(movement) : GetCardinalDirection(facingDirection);
+        bool isMoving = movement.sqrMagnitude > movementEpsilon;
+
+        animator.SetFloat("Horizontal", animDirection.x);
+        animator.SetFloat("Vertical", animDirection.y);
+        animator.SetBool("Moving", isMoving);
 
         if (movement.x < 0)
         {
@@ -98,5 +105,20 @@ public class PlayerController : MonoBehaviour
         spawnedSpell.Initialize(castDirection);
 
         nextCastTime = Time.time + Mathf.Max(0f, spellPrefab.recastTimeGap);
+    }
+
+    private Vector2 GetCardinalDirection(Vector2 direction)
+    {
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            return new Vector2(Mathf.Sign(direction.x), 0f);
+        }
+
+        if (Mathf.Abs(direction.y) > 0f)
+        {
+            return new Vector2(0f, Mathf.Sign(direction.y));
+        }
+
+        return Vector2.right;
     }
 }

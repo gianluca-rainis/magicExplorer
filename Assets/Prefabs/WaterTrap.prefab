@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02895288b48757e4099f4c9a7db7a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterTrap
-  damage: 2
+  damage: 3
   speed: 0
   duration: 5
   recastTimeGap: 4

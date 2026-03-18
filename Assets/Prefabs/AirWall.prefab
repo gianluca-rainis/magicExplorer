@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AirWall
   damage: 1
+  spellKnockback: 3
   speed: 6
   duration: 2
   recastTimeGap: 2
-  spriteAngleOffset: 0
 --- !u!61 &8619683405347482641
 BoxCollider2D:
   m_ObjectHideFlags: 0

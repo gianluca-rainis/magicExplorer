@@ -128,11 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6e5225816e6124fb28c3d58e4dce60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireBolt
-  damage: 1
+  damage: 2
+  spellKnockback: 1
   speed: 6
   duration: 2
   recastTimeGap: 1.5
-  spriteAngleOffset: 0
 --- !u!61 &3803434286521833287
 BoxCollider2D:
   m_ObjectHideFlags: 0
