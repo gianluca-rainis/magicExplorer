@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Mathematics;
 
 public class Enemy : MonoBehaviour
 {
@@ -84,11 +85,11 @@ public class Enemy : MonoBehaviour
 
         if (animDirection.x < 0)
         {
-            transform.localScale = new Vector3(-1.3f, 1.3f, 1);
+            transform.localScale = new Vector3(-math.abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
         else if (animDirection.x > 0)
         {
-            transform.localScale = new Vector3(1.3f, 1.3f, 1);
+            transform.localScale = new Vector3(math.abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }
 
