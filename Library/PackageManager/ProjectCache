@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639072655636391583
-    m_Hash: 3109538603
+      ticks: 639107381496078084
+    m_Hash: 745577324
   m_LockFileStatus:
     m_FilePath: C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639072655636461301
-    m_Hash: 255559239
+      ticks: 639107381496183582
+    m_Hash: 4287404348
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -273,6 +273,7 @@ m_ResolvedPackages:
     - 14.0.0
     - 14.0.1
     - 14.0.2
+    - 14.0.3
     - 15.0.0
     - 15.0.1
     - 15.0.2
@@ -423,6 +424,7 @@ m_ResolvedPackages:
     - 1.1.8
     - 1.1.9
     - 1.1.10
+    - 1.1.11
     - 1.2.0
     - 1.2.1
     - 1.2.2
@@ -435,6 +437,7 @@ m_ResolvedPackages:
     - 3.0.0
     - 3.0.1
     - 4.0.0
+    - 4.0.1
     - 5.0.0
     - 5.0.1
     - 5.0.2
@@ -666,6 +669,7 @@ m_ResolvedPackages:
     - 12.0.1
     - 13.0.0
     - 13.0.1
+    - 13.0.2
     - 14.0.0
     - 14.0.1
     - 14.0.2
@@ -977,6 +981,7 @@ m_ResolvedPackages:
     - 12.0.2
     - 13.0.0
     - 14.0.0
+    - 14.0.1
     - 15.0.0
     - 15.0.1
     - 15.0.2
@@ -1269,10 +1274,12 @@ m_ResolvedPackages:
     - 6.0.1
     - 7.0.0-exp.1
     - 7.0.0
+    - 7.0.1
     - 8.0.0-exp.1
     - 8.0.0
     - 8.0.1
     - 8.0.2
+    - 8.88.0-exp.1
     compatible:
     - 6.0.1
     recommended: 6.0.1
@@ -1384,6 +1391,7 @@ m_ResolvedPackages:
     - 1.0.1
     - 1.0.2
     - 2.0.0
+    - 2.0.1
     - 3.0.0
     compatible:
     - 1.0.0
@@ -1592,10 +1600,14 @@ m_ResolvedPackages:
     - 2.10.2
     - 2.11.2
     - 2.11.3
+    - 2.11.4
+    - 2.12.4
     compatible:
     - 2.10.2
     - 2.11.2
     - 2.11.3
+    - 2.11.4
+    - 2.12.4
     recommended: 2.10.2
     deprecated: []
   dependencies: []
@@ -2001,9 +2013,11 @@ m_ResolvedPackages:
     - 1.16.0
     - 1.17.0
     - 1.18.0
+    - 1.19.0
     compatible:
     - 1.17.0
     - 1.18.0
+    - 1.19.0
     recommended: 1.17.0
     deprecated: []
   dependencies:
@@ -2182,6 +2196,250 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.1
     minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.purchasing@5.2.1
+  testable: 0
+  isDirectDependency: 1
+  version: 5.2.1
+  source: 1
+  resolvedPath: C:\Users\Gianl\OneDrive\Documenti\GitHub_Projects\magicExplorer\Library\PackageCache\com.unity.purchasing@6b6ab99158a4
+  assetPath: Packages/com.unity.purchasing
+  name: com.unity.purchasing
+  displayName: In-App Purchasing
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Unity In-App Purchasing (IAP) allows you to sell digital content
+    within your application. This package provides a unified API for handling in-app
+    purchases across multiple platforms, including the Apple App Store and Google
+    Play Store. Unity IAP simplifies implementing and managing purchases for different
+    stores.\n\nFeatures:\n\n \u25AA A single API to access all supported stores,
+    making it easier to manage your in-game economy.\n \u25AA Automatic integration
+    with Unity Analytics for monitoring revenue and purchase data across platforms.\n
+    \u25AA Supports iOS, Mac, tvOS, and Google Play.\n \u25AA Client-side receipt
+    validation for Apple Store and Google Play.\n\nTo enable In-App Purchasing, install
+    the package and open the Services window (Window > General > Services).\n\nUpgrade
+    notes:\nThis release is a major update to the IAP package. Review the included
+    sample for a complete example of how to use the new version. Upgrading is recommended
+    to take advantage of the latest improvements and features."
+  errors: []
+  versions:
+    all:
+    - 0.0.3
+    - 0.0.4
+    - 0.0.5
+    - 0.0.6
+    - 0.0.7
+    - 0.0.8
+    - 0.0.9
+    - 0.0.10
+    - 0.0.11
+    - 0.0.12
+    - 0.0.13
+    - 0.0.14
+    - 0.0.15
+    - 0.0.16
+    - 0.0.17
+    - 0.0.18
+    - 0.0.19
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.5
+    - 2.0.6
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0
+    - 2.2.1
+    - 2.2.2
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.1
+    - 3.2.2
+    - 3.2.3
+    - 4.0.0
+    - 4.0.3
+    - 4.1.0
+    - 4.1.1
+    - 4.1.2
+    - 4.1.3
+    - 4.1.4
+    - 4.1.5
+    - 4.2.0-pre.1
+    - 4.2.0-pre.2
+    - 4.2.1
+    - 4.3.0
+    - 4.4.0
+    - 4.4.1
+    - 4.5.0
+    - 4.5.1
+    - 4.5.2
+    - 4.6.0
+    - 4.7.0
+    - 4.8.0
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    - 4.10.0
+    - 4.11.0
+    - 4.12.0
+    - 4.12.1-pre.1
+    - 4.12.1-pre.3
+    - 4.12.1-pre.4
+    - 4.12.1
+    - 4.12.2
+    - 4.13.0
+    - 4.13.1
+    - 4.13.2
+    - 4.14.0
+    - 4.14.1
+    - 4.14.2
+    - 4.15.0-pre.1
+    - 4.15.0-pre.2
+    - 4.15.0
+    - 5.0.0-pre.1
+    - 5.0.0-pre.3
+    - 5.0.0-pre.4
+    - 5.0.0-pre.5
+    - 5.0.0-pre.6
+    - 5.0.0-pre.7
+    - 5.0.0-pre.8
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.2.0-pre.1
+    - 5.2.0-pre.2
+    - 5.2.0
+    - 5.2.1
+    compatible:
+    - 4.14.0
+    - 4.14.1
+    - 4.14.2
+    - 4.15.0-pre.1
+    - 4.15.0-pre.2
+    - 4.15.0
+    - 5.0.0-pre.1
+    - 5.0.0-pre.3
+    - 5.0.0-pre.4
+    - 5.0.0-pre.5
+    - 5.0.0-pre.6
+    - 5.0.0-pre.7
+    - 5.0.0-pre.8
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.2.0-pre.1
+    - 5.2.0-pre.2
+    - 5.2.0
+    - 5.2.1
+    recommended: 5.2.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.14.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 2.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.services.core
+    version: 1.16.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - purchasing
+  - iap
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 0
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639102586097790000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.purchasing@5.2/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
+    revision: 52d51028c632deb429407ae5d1c577986281fd6e
+    path: 
+  unityLifecycle:
+    version: 4.14.0
+    nextVersion: 5.0.0-pre.5
+    recommendedVersion: 5.2.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Apple - Fixed an issue where `OnPurchaseFailed`
+    would not trigger when re-purchasing non-consumables.\n- Apple - Fixed tvOS build
+    failure caused by missing `tvOS 15.0` availability on the `SKPaymentTransactionObserver`
+    extension in `PurchaseUseCase.swift`.\n- Apple - Fixed `GetProductDetails` returning
+    an empty dictionary.\n- Google - Fixed an issue where `OnPurchasesFetchFailed`
+    could be triggered when foregrounding the application while the store connection
+    wasn''t established.\n- Updated description of `OnPurchaseDeferred` in `IPurchaseService`
+    and `StoreController`.","gameService":{"groupName":"Monetize","groupIndex":4,"configurePath":"Project/Services/In-App
+    Purchasing","genericDashboardUrl":"https://dashboard.unity3d.com/","projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/analytics/v2/dashboards/revenue","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"}}'
+  assetStore:
+    productId: 
+  fingerprint: 6b6ab99158a4c176536eb87ea458be6b8a769d74
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 4.14.0
+    minimumUnityVersion: 2021.3
   compliance:
     status: 0
     violation:
@@ -2513,10 +2771,14 @@ m_ResolvedPackages:
     - 1.8.8
     - 1.8.9
     - 1.8.10
+    - 1.8.11
+    - 1.8.12
     compatible:
     - 1.8.9
     - 1.8.10
-    recommended: 1.8.10
+    - 1.8.11
+    - 1.8.12
+    recommended: 1.8.12
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -2755,9 +3017,13 @@ m_ResolvedPackages:
     - 1.9.7
     - 1.9.8
     - 1.9.9
+    - 1.9.10
+    - 1.9.11
     compatible:
     - 1.9.9
-    recommended: 1.9.9
+    - 1.9.10
+    - 1.9.11
+    recommended: 1.9.11
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -6193,6 +6459,137 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.services.core@1.16.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.16.0
+  source: 1
+  resolvedPath: C:\Users\Gianl\OneDrive\Documenti\GitHub_Projects\magicExplorer\Library\PackageCache\com.unity.services.core@8ba50f624741
+  assetPath: Packages/com.unity.services.core
+  name: com.unity.services.core
+  displayName: Services Core
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'This package defines common components used by multiple Game Service
+    packages.
+
+    These are standardized and aim to unify the overall experience
+    of working with Game Services SDK.'
+  errors: []
+  versions:
+    all:
+    - 1.0.1
+    - 1.1.0-pre.7
+    - 1.1.0-pre.8
+    - 1.1.0-pre.9
+    - 1.1.0-pre.10
+    - 1.1.0-pre.11
+    - 1.1.0-pre.41
+    - 1.1.0-pre.69
+    - 1.2.0
+    - 1.3.1
+    - 1.3.2
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.12.2
+    - 1.12.4
+    - 1.12.5
+    - 1.13.0
+    - 1.14.0
+    - 1.15.1
+    - 1.15.2
+    - 1.16.0
+    compatible:
+    - 1.16.0
+    recommended: 1.16.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638985740780220000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.16/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+    revision: 1b63a99d4899b6cf84a11901c8d66ec8369dc3b4
+    path: 
+  unityLifecycle:
+    version: 1.16.0
+    nextVersion: 
+    recommendedVersion: 1.16.0
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Changed\n* Upgrading base unity version support
+    to 2022.3\n\n### Added\n- Adding environment button in the main toolbar for Unity
+    6.3. Right-click the main toolbar and select `Services/Environment` to activate.\n\n###
+    Fixed\n\n- Fixed an issue where errors would continuously be logged when unlinking
+    a project in the Services tab\n- Fixed an issue where the Popup for Project Linking
+    would close when chooisng the `Open Project Settings` option\n- Fixed compilation
+    issue in 2022.3.10f1 and lower"}'
+  assetStore:
+    productId: 
+  fingerprint: 8ba50f62474188022a50a78f721a5d30dfba0c3e
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.16.0
+    minimumUnityVersion: 2022.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.2d.common@12.0.1
   testable: 0
   isDirectDependency: 0
@@ -6942,11 +7339,13 @@ m_ResolvedPackages:
     - 1.8.26
     - 1.8.27
     - 1.8.28
+    - 1.8.29
     compatible:
     - 1.8.26
     - 1.8.27
     - 1.8.28
-    recommended: 1.8.28
+    - 1.8.29
+    recommended: 1.8.29
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -7013,6 +7412,108 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.8.26
     minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.2
+  testable: 0
+  isDirectDependency: 0
+  version: 3.2.2
+  source: 1
+  resolvedPath: C:\Users\Gianl\OneDrive\Documenti\GitHub_Projects\magicExplorer\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    compatible:
+    - 3.2.2
+    recommended: 3.2.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638971744897690000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* Fixed Newtonsoft DLL when compiling with netstandard
+    2.0."}'
+  assetStore:
+    productId: 
+  fingerprint: 4dfd81071c6475bb9c114f920bfb4e3fc5e28c6a
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 3.2.2
+    minimumUnityVersion: 2018.4
   compliance:
     status: 0
     violation:
@@ -7186,9 +7687,15 @@ m_ResolvedPackages:
     - 3.0.3
     - 3.1.0
     - 3.2.0
+    - 3.2.1
+    - 3.3.0
+    - 3.4.0
     compatible:
     - 3.2.0
-    recommended: 3.2.0
+    - 3.2.1
+    - 3.3.0
+    - 3.4.0
+    recommended: 3.2.1
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
