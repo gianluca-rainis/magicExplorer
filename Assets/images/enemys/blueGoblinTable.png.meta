@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: c34b58d788e35804cbfc6a213dbfde04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5277960150808244574
+    second: blueGoblinTable_0
+  - first:
+      213: -7742654213763188580
+    second: blueGoblinTable_1
+  - first:
+      213: 8941462692316073105
+    second: blueGoblinTable_2
+  - first:
+      213: 3778786356267401022
+    second: blueGoblinTable_3
+  - first:
+      213: 7664228699541455978
+    second: blueGoblinTable_4
+  - first:
+      213: -3610828403706050493
+    second: blueGoblinTable_5
+  - first:
+      213: 2978560922389170966
+    second: blueGoblinTable_6
+  - first:
+      213: 1779369835180977456
+    second: blueGoblinTable_7
+  - first:
+      213: -2375099873579444918
+    second: blueGoblinTable_8
+  - first:
+      213: 3428092709514228474
+    second: blueGoblinTable_9
+  - first:
+      213: -6870825506605322380
+    second: blueGoblinTable_10
+  - first:
+      213: 6073683751013614446
+    second: blueGoblinTable_11
+  - first:
+      213: -162107258784624206
+    second: blueGoblinTable_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blueGoblinTable_0
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 699
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51b7971bc41f3940800000000000000
+      internalID: 5277960150808244574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_1
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 699
+        width: 78
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98b6f1d3019c8490800000000000000
+      internalID: -7742654213763188580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_2
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 699
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c48ebd1f4761c70800000000000000
+      internalID: 8941462692316073105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 699
+        width: 78
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f396f8b22f07430800000000000000
+      internalID: 3778786356267401022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 531
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64c589356fcc5a60800000000000000
+      internalID: 7664228699541455978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 527
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348c534a2b2c3edc0800000000000000
+      internalID: -3610828403706050493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_6
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 531
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bcdd8b069f55920800000000000000
+      internalID: 2978560922389170966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 527
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03de106007791b810800000000000000
+      internalID: 1779369835180977456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 351
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45d831bf33f90fd0800000000000000
+      internalID: -2375099873579444918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_9
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 347
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2b3bf0828039f20800000000000000
+      internalID: 3428092709514228474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 351
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fa81dda9ce5a0a0800000000000000
+      internalID: -6870825506605322380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_11
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 347
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e638a39113f0a4450800000000000000
+      internalID: 6073683751013614446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blueGoblinTable_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 175
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b151a89e4410cdf0800000000000000
+      internalID: -162107258784624206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      blueGoblinTable_0: 5277960150808244574
+      blueGoblinTable_1: -7742654213763188580
+      blueGoblinTable_10: -6870825506605322380
+      blueGoblinTable_11: 6073683751013614446
+      blueGoblinTable_12: -162107258784624206
+      blueGoblinTable_2: 8941462692316073105
+      blueGoblinTable_3: 3778786356267401022
+      blueGoblinTable_4: 7664228699541455978
+      blueGoblinTable_5: -3610828403706050493
+      blueGoblinTable_6: 2978560922389170966
+      blueGoblinTable_7: 1779369835180977456
+      blueGoblinTable_8: -2375099873579444918
+      blueGoblinTable_9: 3428092709514228474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

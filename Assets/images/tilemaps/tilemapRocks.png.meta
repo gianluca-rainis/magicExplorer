@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: a29b35fb8b3654649ba7d59aa649c131
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2018671512528490505
+    second: tilemapRocks_0
+  - first:
+      213: 1487196608039780413
+    second: tilemapRocks_1
+  - first:
+      213: -7868525123201665026
+    second: tilemapRocks_2
+  - first:
+      213: 8836588819004672150
+    second: tilemapRocks_3
+  - first:
+      213: -1521618893185998948
+    second: tilemapRocks_4
+  - first:
+      213: 4993105590376377637
+    second: tilemapRocks_5
+  - first:
+      213: 1567525865312271188
+    second: tilemapRocks_6
+  - first:
+      213: 8028930842188352726
+    second: tilemapRocks_7
+  - first:
+      213: 1551611562454261703
+    second: tilemapRocks_8
+  - first:
+      213: 6277231885057503988
+    second: tilemapRocks_9
+  - first:
+      213: -2360059993923590167
+    second: tilemapRocks_10
+  - first:
+      213: -133844547123207672
+    second: tilemapRocks_11
+  - first:
+      213: 7624943869361583146
+    second: tilemapRocks_12
+  - first:
+      213: 595141857723186524
+    second: tilemapRocks_13
+  - first:
+      213: 6532176170904985591
+    second: tilemapRocks_14
+  - first:
+      213: 3097994891329726102
+    second: tilemapRocks_15
+  - first:
+      213: 1176280207713460950
+    second: tilemapRocks_16
+  - first:
+      213: 4762254825312917310
+    second: tilemapRocks_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilemapRocks_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 315
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90016769b03c30c10800000000000000
+      internalID: 2018671512528490505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 333
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30806d7f6593a410800000000000000
+      internalID: 1487196608039780413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 315
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7f355f6126dc290800000000000000
+      internalID: -7868525123201665026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 315
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69846fe66bed1aa70800000000000000
+      internalID: 8836588819004672150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 315
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f1024bdaf12eae0800000000000000
+      internalID: -1521618893185998948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_5
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 315
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52da66074131b4540800000000000000
+      internalID: 4993105590376377637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_6
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 249
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bbc2a2878f0c510800000000000000
+      internalID: 1567525865312271188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 183
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc80d6df0e7c6f60800000000000000
+      internalID: 8028930842188352726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 249
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf9979ce7e688510800000000000000
+      internalID: 1551611562454261703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 183
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2bb9924253d1750800000000000000
+      internalID: 6277231885057503988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 249
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7e29d80f16f3fd0800000000000000
+      internalID: -2360059993923590167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 249
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8022991f71d742ef0800000000000000
+      internalID: -133844547123207672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 183
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24f69dec0e31d960800000000000000
+      internalID: 7624943869361583146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 249
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d7e8ccd5e524800800000000000000
+      internalID: 595141857723186524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_14
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 183
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff10155e93f6aa50800000000000000
+      internalID: 6532176170904985591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_15
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 249
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696eea590f94efa20800000000000000
+      internalID: 3097994891329726102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_16
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 183
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d26511ed9cf25010800000000000000
+      internalID: 1176280207713460950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemapRocks_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 183
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e379aa8388de61240800000000000000
+      internalID: 4762254825312917310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tilemapRocks_0: 2018671512528490505
+      tilemapRocks_1: 1487196608039780413
+      tilemapRocks_10: -2360059993923590167
+      tilemapRocks_11: -133844547123207672
+      tilemapRocks_12: 7624943869361583146
+      tilemapRocks_13: 595141857723186524
+      tilemapRocks_14: 6532176170904985591
+      tilemapRocks_15: 3097994891329726102
+      tilemapRocks_16: 1176280207713460950
+      tilemapRocks_17: 4762254825312917310
+      tilemapRocks_2: -7868525123201665026
+      tilemapRocks_3: 8836588819004672150
+      tilemapRocks_4: -1521618893185998948
+      tilemapRocks_5: 4993105590376377637
+      tilemapRocks_6: 1567525865312271188
+      tilemapRocks_7: 8028930842188352726
+      tilemapRocks_8: 1551611562454261703
+      tilemapRocks_9: 6277231885057503988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

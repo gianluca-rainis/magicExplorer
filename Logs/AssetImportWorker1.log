@@ -1,0 +1,332 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.2f1 (a9779f353c9b) revision 11106207'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'it' Physical Memory: 16095 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl" at "2026-04-02T14:48:05.6884207Z"
+Date: 2026-04-02T14:48:05Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62613
+-licensingIpc
+LicenseClient-Gianl
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
+C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [42716]  Target information:
+
+Player connection [42716]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 439196635 [EditorId] 439196635 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42716]  * "[IP] 172.21.224.1 [Port] 0 [Flags] 2 [Guid] 439196635 [EditorId] 439196635 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42716]  * "[IP] 192.168.1.48 [Port] 0 [Flags] 2 [Guid] 439196635 [EditorId] 439196635 [Version] 1048832 [Id] WindowsEditor(7,Gianluca_PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42716] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [42716] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 6.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.2f1 (a9779f353c9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Gianl/OneDrive/Documenti/GitHub_Projects/magicExplorer/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0xa7a0)
+    Vendor:   Intel
+    VRAM:     8047 MB
+    Driver:   32.0.101.6078
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              a017c8786e82499f9af705572adec033
+  Correlation Id:          83e765bf61154476a9dad0d44aabdc34
+  External correlation Id: 6522231898361481964
+  Machine Id:              aW418Y1nn6jfA9745zGJhLnfEDk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gianl" (connect: 0.00s, validation: 0.00s, handshake: 1.76s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gianl-notifications" at "2026-04-02T14:48:07.4516161Z"
+[Licensing::Module] Licensing Background thread has ended after 1.76s
+[Licensing::Module] Licensing is initialized (took 0.48s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 9072335735776-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.488697 seconds.
+- Loaded All Assemblies, in  1.405 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1119 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.159 seconds
+Domain Reload Profiling: 3557ms
+	BeginReloadAssembly (291ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (584ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (413ms)
+			TypeCache.Refresh (410ms)
+				TypeCache.ScanAssembly (386ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2160ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2087ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1321ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (192ms)
+			ProcessInitializeOnLoadAttributes (357ms)
+			ProcessInitializeOnLoadMethodAttributes (209ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  2.146 seconds
+Refreshing native plugins compatible for Editor in 5.76 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+<HackaTime> Initializing...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:76)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 76)
+
+<HackaTime> Sending heartbeat...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:144)
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<WakaTime.Plugin/<SendHeartbeat>d__29> (WakaTime.Plugin/<SendHeartbeat>d__29&)
+WakaTime.Plugin:SendHeartbeat (bool)
+WakaTime.Plugin:Initialize () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:78)
+WakaTime.Plugin:.cctor () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:41)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 144)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.390 seconds
+Domain Reload Profiling: 4504ms
+	BeginReloadAssembly (387ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1517ms)
+		LoadAssemblies (1051ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (685ms)
+			TypeCache.Refresh (458ms)
+				TypeCache.ScanAssembly (425ms)
+			BuildScriptInfoCaches (183ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (2391ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1941ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (375ms)
+			ProcessInitializeOnLoadAttributes (1217ms)
+			ProcessInitializeOnLoadMethodAttributes (291ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+<HackaTime> Got response
+{"id":2073960993,"user_id":7870,"branch":"main","category":"coding","dependencies":[],"editor":"","entity":"Unsaved Scene","language":"unity","machine":null,"operating_system":"","project":"magicExplorer","type":"file","user_agent":"unity-hackatime","line_additions":null,"line_deletions":null,"lineno":null,"lines":null,"cursorpos":null,"project_root_count":null,"time":1775141248.0,"is_write":false,"created_at":"2026-04-02T14:47:54.374Z","updated_at":"2026-04-02T14:47:54.374Z","fields_hash":"a43c6737ea9f4a34d614b827b50af4fe","source_type":"direct_entry","ip_address":"2.34.183.101","ysws_program":"nothing","deleted_at":null}
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:187)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 187)
+
+<HackaTime> Sent heartbeat!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WakaTime.Plugin/<SendHeartbeat>d__29:MoveNext () (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:203)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+WakaTime.Plugin/<>c__DisplayClass29_0:<SendHeartbeat>b__0 (UnityEngine.AsyncOperation) (at ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs:176)
+UnityEngine.AsyncOperation:InvokeCompletionEvent ()
+
+(Filename: ./Library/PackageCache/com.daniel-geo.unityhackatime@5ac210a9a287/Editor/Plugin.cs Line: 203)
+
+Unloading 6890 unused Assets / (4.4 MB). Loaded Objects now: 7725.
+Memory consumption went from 156.3 MB to 151.8 MB.
+Total: 19.462000 ms (FindLiveObjects: 2.357900 ms CreateObjectMapping: 1.072300 ms MarkObjects: 11.785400 ms  DeleteObjects: 4.243500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 805899.957342 seconds.
+  path: Assets/Scripts/HealthSystem.cs
+  artifactKey: Guid(c90ea07948c43df479c7184f5df6ff0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/HealthSystem.cs using Guid(c90ea07948c43df479c7184f5df6ff0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e231ebf3f43fd4927812226b4549af8') in 3.4455664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Prefabs/Blob.prefab
+  artifactKey: Guid(4d07238c891b3d84eb6c6905efe561a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/Blob.prefab using Guid(4d07238c891b3d84eb6c6905efe561a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7651c267c1bdee85fa5fb787ab2badb') in 0.3223937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Prefabs/Cure.prefab
+  artifactKey: Guid(099063355d873794da3afe0cd19f417e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/Cure.prefab using Guid(099063355d873794da3afe0cd19f417e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c245c1e28aebe4027e89efa693928c2e') in 0.1008998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,5 +1,5 @@
 # 🧙‍♂️ MagicExplorer  
-An action 2D game made with Godot Engine, where you play as a wizard that's exploring a dungeon full of dangerous enemies!
+An action 2D game made with Unity, where you play as a wizard that's exploring a dungeon full of dangerous enemies!
 
 ---
 
@@ -34,19 +34,13 @@ Your goal is simple: **explore all the dungeon, beat more enemies that you can a
 ---
 
 ## 🛠️ Built With
-- **Godot Engine 4.5.1**
-- GDScript
+- **Unity Engine**
 - Custom textures
 - Modular scene architecture (player, firebolt, enemies, UI, etc.)
 
 ---
 
 ## ▶️ How to Run
-### Godot
-1. Open **Godot Engine**
-2. Import the project folder
-3. Run the `main.tscn` scene
-
 ### Windows
 1. Download the .exe file
 2. Execute the file
@@ -63,4 +57,5 @@ Your goal is simple: **explore all the dungeon, beat more enemies that you can a
 ## 🧾 License
 MagicExplorer is under the MIT License.
 
----
+## 🧑‍💻 Author
+The author is Gianluca Rainis ([gianluca-rainis](https://github.com/gianluca-rainis) on GitHub)
