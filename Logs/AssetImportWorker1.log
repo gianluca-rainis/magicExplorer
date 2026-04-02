@@ -1736,3 +1736,39 @@ Memory consumption went from 161.6 MB to 157.0 MB.
 Total: 9.513900 ms (FindLiveObjects: 0.607500 ms CreateObjectMapping: 0.411800 ms MarkObjects: 6.195900 ms  DeleteObjects: 2.295800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2080.958631 seconds.
+  path: Assets/Images/enemys/DragonAnimation.controller
+  artifactKey: Guid(80241982ef5a40745b7d85dc094d9677) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Images/enemys/DragonAnimation.controller using Guid(80241982ef5a40745b7d85dc094d9677) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21b7ce5d0b7de5f35d54dd01d2fdf153') in 0.2131965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Prefabs/Dragon.prefab
+  artifactKey: Guid(11b2299e2d8a0944498a035b9b3cda0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/Dragon.prefab using Guid(11b2299e2d8a0944498a035b9b3cda0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b050f60e8bd05f6baf926e76cbb1cf13') in 0.200197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scripts/Enemy.cs
+  artifactKey: Guid(a2fa8655b6a4a7241b7d91d075c414f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/Enemy.cs using Guid(a2fa8655b6a4a7241b7d91d075c414f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ce20cc5f30f6e19a3264c9024cf91c5') in 0.0073618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Blob.prefab
+  artifactKey: Guid(4d07238c891b3d84eb6c6905efe561a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/Blob.prefab using Guid(4d07238c891b3d84eb6c6905efe561a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '586fee77897fbca86b99d0721e2552bd') in 0.0708398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -57,9 +57,11 @@
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\SettingsPanel.cs" />
     <Compile Include="Assets\Scripts\PauseMenuPanel.cs" />
     <Compile Include="Assets\Scripts\WaterTrap.cs" />
+    <Compile Include="Assets\Scripts\RandomEnemy.cs" />
     <Compile Include="Assets\Scripts\AirWall.cs" />
   </ItemGroup>
   <ItemGroup>

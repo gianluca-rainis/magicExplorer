@@ -10,6 +10,7 @@ public class DoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            DestroyCurrentRoomEnemies();
             DestroyAllActiveSpells();
 
             nextRoom.SetActive(true);
@@ -20,6 +21,21 @@ public class DoorScript : MonoBehaviour
             }
 
             currentRoom.SetActive(false);
+        }
+    }
+
+    private void DestroyCurrentRoomEnemies()
+    {
+        if (currentRoom == null)
+        {
+            return;
+        }
+
+        Enemy[] enemiesInRoom = currentRoom.GetComponentsInChildren<Enemy>(true);
+
+        foreach (Enemy enemy in enemiesInRoom)
+        {
+            Destroy(enemy.gameObject);
         }
     }
 
