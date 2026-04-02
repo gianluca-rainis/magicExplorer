@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -15,23 +14,50 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
-        CreateHearts();
         playerHealth.onHealthChanged += UpdateHearts;
         UpdateHearts();
     }
 
-    void CreateHearts()
+    private void OnDestroy()
     {
-        for (int i = 0; i < playerHealth.maxHP; i++)
+        if (playerHealth != null)
+        {
+            playerHealth.onHealthChanged -= UpdateHearts;
+        }
+    }
+
+    private void EnsureHeartCount()
+    {
+        if (playerHealth == null)
+        {
+            return;
+        }
+
+        while (heartImages.Count < playerHealth.maxHP)
         {
             GameObject heart = Instantiate(heartPrefab, transform);
             Image heartImage = heart.GetComponent<Image>();
             heartImages.Add(heartImage);
         }
+
+        while (heartImages.Count > playerHealth.maxHP)
+        {
+            int lastIndex = heartImages.Count - 1;
+            Image lastHeart = heartImages[lastIndex];
+
+            if (lastHeart != null)
+            {
+                Destroy(lastHeart.gameObject);
+            }
+
+            heartImages.RemoveAt(lastIndex);
+        }
     }
 
     void UpdateHearts()
     {
+        EnsureHeartCount();
+
         for (int i = 0; i < heartImages.Count; i++)
         {
             if (playerHealth.currentHP >= i+1)

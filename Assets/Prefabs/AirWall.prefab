@@ -128,11 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cc3bc1f67a5eb94caeb2484c620b874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AirWall
+  level: 1
   damage: 1
-  spellKnockback: 3
-  speed: 6
-  duration: 2
-  recastTimeGap: 2
+  spellKnockback: 2.5
+  speed: 7
+  duration: 1.5
+  recastTimeGap: 1.5
 --- !u!61 &8619683405347482641
 BoxCollider2D:
   m_ObjectHideFlags: 0

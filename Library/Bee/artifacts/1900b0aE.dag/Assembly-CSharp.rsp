@@ -482,6 +482,7 @@
 "Assets/Scripts/PauseMenuPanel.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerHealth.cs"
+"Assets/Scripts/PowerUp.cs"
 "Assets/Scripts/RandomEnemy.cs"
 "Assets/Scripts/SettingsPanel.cs"
 "Assets/Scripts/SpellBase.cs"

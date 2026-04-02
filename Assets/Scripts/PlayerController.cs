@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
+    private FireBolt fireboltSpell;
+    private AirWall airwallSpell;
+    private WaterTrap watertrapSpell;
 
     private const float movementEpsilon = 0.0001f;
 
@@ -25,6 +28,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        InitializeRuntimeSpells();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -79,22 +84,22 @@ public class PlayerController : MonoBehaviour
 
     private void CastFirebolt()
     {
-        TryCastSpell(fireboltPrefab, ref nextFireboltCastTime);
+        TryCastSpell(fireboltPrefab, fireboltSpell, ref nextFireboltCastTime);
     }
 
     private void CastAirwall()
     {
-        TryCastSpell(airwallPrefab, ref nextAirwallCastTime);
+        TryCastSpell(airwallPrefab, airwallSpell, ref nextAirwallCastTime);
     }
 
     private void CastWatertrap()
     {
-        TryCastSpell(watertrapPrefab, ref nextWatertrapCastTime);
+        TryCastSpell(watertrapPrefab, watertrapSpell, ref nextWatertrapCastTime);
     }
 
-    private void TryCastSpell<TSpell>(TSpell spellPrefab, ref float nextCastTime) where TSpell : SpellBase
+    private void TryCastSpell<TSpell>(TSpell spellPrefab, TSpell spellTemplate, ref float nextCastTime) where TSpell : SpellBase
     {
-        if (spellPrefab == null || Time.time < nextCastTime)
+        if (spellPrefab == null || spellTemplate == null || Time.time < nextCastTime)
         {
             return;
         }
@@ -102,9 +107,10 @@ public class PlayerController : MonoBehaviour
         Vector2 castDirection = lastFacingDirection == Vector2.zero ? Vector2.right : lastFacingDirection;
         Vector3 spawnPosition = transform.position + (Vector3)(castDirection * spellSpawnDistance);
         TSpell spawnedSpell = Instantiate(spellPrefab, spawnPosition, Quaternion.identity);
+        spawnedSpell.CopyStatsFrom(spellTemplate);
         spawnedSpell.Initialize(castDirection);
 
-        nextCastTime = Time.time + Mathf.Max(0f, spellPrefab.recastTimeGap);
+        nextCastTime = Time.time + Mathf.Max(0f, spellTemplate.recastTimeGap);
     }
 
     private Vector2 GetCardinalDirection(Vector2 direction)
@@ -120,5 +126,39 @@ public class PlayerController : MonoBehaviour
         }
 
         return Vector2.right;
+    }
+
+    public SpellBase GetRandomSpell()
+    {
+        SpellBase[] spells = new SpellBase[] { fireboltSpell, airwallSpell, watertrapSpell };
+
+        int randomIndex = Random.Range(0, spells.Length);
+        
+        return spells[randomIndex];
+    }
+
+    public FireBolt FireboltSpell => fireboltSpell;
+    public AirWall AirwallSpell => airwallSpell;
+    public WaterTrap WatertrapSpell => watertrapSpell;
+
+    private void InitializeRuntimeSpells()
+    {
+        fireboltSpell = CreateRuntimeSpell(fireboltPrefab);
+        airwallSpell = CreateRuntimeSpell(airwallPrefab);
+        watertrapSpell = CreateRuntimeSpell(watertrapPrefab);
+    }
+
+    private TSpell CreateRuntimeSpell<TSpell>(TSpell spellPrefab) where TSpell : SpellBase
+    {
+        if (spellPrefab == null)
+        {
+            return null;
+        }
+
+        TSpell runtimeSpell = Instantiate(spellPrefab, Vector3.zero, Quaternion.identity, transform);
+        runtimeSpell.gameObject.SetActive(false);
+        runtimeSpell.CopyStatsFrom(spellPrefab);
+        
+        return runtimeSpell;
     }
 }

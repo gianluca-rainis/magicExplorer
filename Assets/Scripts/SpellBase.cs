@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SpellBase : MonoBehaviour
 {
+    public int level = 1;
     public int damage = 1;
     public float spellKnockback = 2f;
     public float speed = 5f;
@@ -74,6 +75,31 @@ public class SpellBase : MonoBehaviour
     public void DurationLevelUp(float newDuration)
     {
         duration = newDuration;
+    }
+
+    public void KnockbackLevelUp(float newKnockback)
+    {
+        spellKnockback = newKnockback;
+    }
+
+    public void RecastTimeGapLevelUp(float newRecastTimeGap)
+    {
+        recastTimeGap = newRecastTimeGap;
+    }
+
+    public void CopyStatsFrom(SpellBase source)
+    {
+        if (source == null)
+        {
+            return;
+        }
+
+        level = source.level;
+        damage = source.damage;
+        spellKnockback = source.spellKnockback;
+        speed = source.speed;
+        duration = source.duration;
+        recastTimeGap = source.recastTimeGap;
     }
 
     protected virtual void Update()
