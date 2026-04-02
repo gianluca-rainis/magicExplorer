@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   speed: 2
-  damage: 1.5
+  damage: 1
   maxHP: 2
   defense: 1
   collisionPushSpeed: 2
