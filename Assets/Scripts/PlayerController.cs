@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private WaterTrap watertrapPrefab;
     [SerializeField] private float spellSpawnDistance = 0.75f;
 
+    private PlayerInput playerInput;
+    private InputAction fireboltAction;
+    private InputAction airwallAction;
+    private InputAction watertrapAction;
+
     private Rigidbody2D rb;
     private Animator animator;
     private FireBolt fireboltSpell;
@@ -23,6 +28,15 @@ public class PlayerController : MonoBehaviour
     private float nextFireboltCastTime;
     private float nextAirwallCastTime;
     private float nextWatertrapCastTime;
+
+    void Awake()
+    {
+        playerInput = GetComponent<PlayerInput>();
+
+        fireboltAction = playerInput.actions["J"];
+        airwallAction = playerInput.actions["K"];
+        watertrapAction = playerInput.actions["L"];
+    }
 
     void Start()
     {
@@ -61,17 +75,17 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(0.8f, 0.8f, 1);
         }
 
-        if (Keyboard.current != null && Keyboard.current.jKey.wasPressedThisFrame)
+        if (fireboltAction != null && fireboltAction.WasPressedThisFrame())
         {
             CastFirebolt();
         }
 
-        if (Keyboard.current != null && Keyboard.current.kKey.wasPressedThisFrame)
+        if (airwallAction != null && airwallAction.WasPressedThisFrame())
         {
             CastAirwall();
         }
 
-        if (Keyboard.current != null && Keyboard.current.lKey.wasPressedThisFrame)
+        if (watertrapAction != null && watertrapAction.WasPressedThisFrame())
         {
             CastWatertrap();
         }
