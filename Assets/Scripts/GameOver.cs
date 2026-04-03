@@ -10,5 +10,9 @@ public class GameOver : MonoBehaviour
         {
             SceneManager.LoadScene("FirstLevel");
         }
+        if ()
+        {
+            
+        }
     }
 }
