@@ -1,61 +1,53 @@
-# 🧙‍♂️ MagicExplorer  
-An action 2D game made with Unity, where you play as a wizard that's exploring a dungeon full of dangerous enemies!
+# MagicExplorer  
+MagicExplorer is an action 2D game made with Unity, where you play as a wizard that's exploring a dungeon full of enemies.
 
----
+## Description
+In MagicExplorer, you take on the role of a magic student who decides to explore a dungeon to gain experience.
 
-## 📜 Description
-In *MagicExplorer*, you take on the role of a lone wizard, fighting off dangerous creatures while explorign a dungeon. Armed with only three spells, you must move swiftly, attack strategically, and defend yourself while increasing your score through kills and survival time.
+Armed with only the three basic spells, you must find the dungeon's exit, relying solely on your sense of direction.
 
-Your goal is simple: **explore all the dungeon, beat more enemies that you can and reach the highest score**!
+The dungeon is filled with enemies you must defeat with magic.
+As you explore, you'll find treasures that will help you grow stronger.
 
----
+## Controls
+| Action | Keyboard | Gamepad |
+| --- | --- | --- |
+| Move | Arrow Keys or WASD | Left Joystick / Arrows |
+| Cast Firebolt | `J` | `B` (Or low button) |
+| Cast AirWall | `K` | `A` (Or right button) |
+| Cast WaterTrap | `L` | `X` (Or up button) |
+| Pause / Menu | `Esc` | `Start` (Or equivalent) |
 
-## 🎮 Controls
-+-------------------------------------+
-| Action         | Key(s)             |
-+----------------+--------------------+
-| Move           | Arrow Keys or WASD |
-| Cast Firebolt  | `J`                |
-| Cast WaterTrap | `K`                |
-| Cast AirWall   | `L`                |
-| Pause / Menu   | `Esc`              |
-+----------------+--------------------+
-
----
-
-## ✨ Features
-- Score system based on kills and time
+## Features
 - Health system with visual heart indicators
 - Spells with cooldown and directional aiming
-- Multiple enemy types with different damage, speed and bonus points
+- Multiple enemy types with different damage, speed, weight and strenght
+- Bosses in some rooms of the dungeon
+- Powerup and cures
 - Pause menu with options, key reminders, spell levels and settings
-- Pixel-art-style visuals (all the graphics were drawn by the author)
+- Pixel-art-style visuals (all the graphics drawn by the author)
 
----
-
-## 🛠️ Built With
+## Built With
 - **Unity Engine**
-- Custom textures
-- Modular scene architecture (player, firebolt, enemies, UI, etc.)
+- Custom pixel-art textures
 
----
-
-## ▶️ How to Run
+## How to Run
 ### Windows
-1. Download the .exe file
-2. Execute the file
+1. Download the MagicExplorer_Installer.exe file
+2. Execute the installer with Administrator privileges
+3. Follow the installer's instructions
+4. Launch the game
 
 ### Android
-1. Download the .apk file
-2. Execute the file
+1. Download the MagicExplorer.apk file
+2. Install the application
+3. Launch the game
 
 ### Other
-[itch.io](https://var-grdev.itch.io/magicexplorer)
+- Play in browser on [itch.io](https://var-grdev.itch.io/magicexplorer)
 
----
-
-## 🧾 License
+## License
 MagicExplorer is under the MIT License.
 
-## 🧑‍💻 Author
-The author is Gianluca Rainis ([gianluca-rainis](https://github.com/gianluca-rainis) on GitHub)
+## Author
+The author of both code and graphics is Gianluca Rainis ([gianluca-rainis](https://github.com/gianluca-rainis) on GitHub).
