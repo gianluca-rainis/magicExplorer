@@ -51,3 +51,16 @@ MagicExplorer is under the MIT License.
 
 ## Author
 The author of both code and graphics is Gianluca Rainis ([gianluca-rainis](https://github.com/gianluca-rainis) on GitHub).
+
+## Images
+### The Title Screen
+![The title screen](./images/game/titleScreen.png)
+
+### Room with some enemies
+![A room with enemies](./images/game/room.png)
+
+### Room with two powerups
+![A room with enemies and powerups](./images/game/roomWithPowerup.png)
+
+### Room with a boss
+![A room with a boss](./images/game/roomWithBoss.png)
